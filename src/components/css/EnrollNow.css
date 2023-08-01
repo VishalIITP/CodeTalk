@@ -1,0 +1,213 @@
+/* ResponsiveBox.css */
+
+.enrollNowH
+{
+    width: 100%;
+    margin-top: 40px;
+    letter-spacing: 1px; 
+    text-align: center;   
+}
+
+.enrollNowHT{
+    color: #FFF;
+text-align: center;
+font-family: IBM Plex Sans;
+font-size: 48px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.enrollNowbox{
+    margin-top: 40px;
+}
+
+
+.container {
+    display: flex;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .left-box {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 360px;
+    flex: 1;
+    padding: 20px;
+    font-family: IBM Plex Sans;
+    color: white;
+    background-color: transparent;
+    background-image: linear-gradient(161deg,transparent,rgba(166,239,103,.14));
+    border:1px solid rgba(255,255,255,.41);
+    border-radius: 11px;
+  }
+  
+  .right-text {
+    margin-left: auto;
+    margin-right: auto;
+    flex: 1;
+    max-width: 360px;
+    font-family: IBM Plex Sans;
+    color: white;
+    padding: 20px;
+    background-color: #000000;
+    text-align: left;
+  }
+  
+  /* Media Query for Mobile View */
+  @media (max-width: 600px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .left-box,
+    .right-text {
+      flex: 100%;
+    }
+  }
+  
+
+
+  /*Left*/
+
+.ENheading{
+    padding-top: 30px;
+    width: fit-content;
+    text-align: left;
+    font-size: 27.2px;
+    font-family: IBM Plex Sans;
+    color: white;
+    font-weight: 600;
+
+}
+
+.price{
+    margin-top: 20px;
+}
+.ENprice{
+    padding-top: 30px;
+    width: fit-content;
+    text-align: left;
+    font-size: 33.6px;
+    font-family: IBM Plex Sans;
+    color: white;
+    font-weight: 400;
+    margin-left: 10px;
+
+
+}
+
+.ENpricegreen{
+    color: #A6EF67;
+    font-style: normal;
+    line-height: 105.5%;
+    padding-top: 30px;
+    width: fit-content;
+    text-align: left;
+    font-size: 52.8px;
+    font-family: IBM Plex Sans;
+    font-weight: 700;
+}
+
+.ENpoints{
+    margin-top: 40px;
+    width: 90%;
+
+
+}
+
+.ENP{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.ENPtick{
+    position: relative;
+    left:0px;
+    background-image: url("https://assets.website-files.com/63c698560a57ab3deb917f5a/63c698c294ee731323affe5f_Icon%20(2).svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+    height: 16px;
+    width: 16px;
+    margin-top: 20px;
+}
+
+.ENPtext{
+    margin-left: 30px;
+}
+
+
+
+/* enroll now button*/
+.enrollNow{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 25px;
+    width: 94.196428571428%;
+    height: 49.95px;
+    border-radius: 12px;
+    background: #A6EF67;
+}
+
+
+.enrollNowText{
+    position: relative;
+    top: 17px;
+    margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+    width: 55.05050505050505%;
+    min-width: 109px;
+    color: #000;
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 750;
+    line-height: 105.5%; /* 14.77px */
+}
+
+.belowNote{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    color:#ffffff80;
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+
+}
+
+
+/* Right*/
+
+.RTh{
+    padding-top: 30px;
+    text-align: left;
+    font-size: 27.2px;
+    font-family: IBM Plex Sans;
+    color: white;
+    font-weight: 600;
+
+}
+
+.RENPtick{
+    position: relative;
+    left:0px;
+    background-image: url("https://assets.website-files.com/63c698560a57ab3deb917f5a/63c698c294ee731323affe5f_Icon%20(2).svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+    height: 16px;
+    width: 16px;
+}
+
+.RENpoints{
+    margin-top: 20px;
+    width: 90%;
+
+
+}

@@ -1,0 +1,84 @@
+
+.EBOgreenblack{
+    position:fixed;
+    max-width: 600px;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80.357142857142%;
+    border-radius: 4px;
+    background-color: black; 
+
+}
+
+
+.EBOgreen{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width:100%;
+    border-radius: 4px;
+    background-image:linear-gradient(180deg, rgba(150, 180, 43, 0.65) 0%, rgba(221, 238, 54, 0.56) 100%) ;
+}
+
+
+@media (min-width:700px) {
+    .EBOgreenblack,.EBOgreen,.EBOtext{
+        aspect-ratio: 16/1;
+    }
+    
+}
+@media (625px < width < 700px) {
+    .EBOgreenblack,.EBOgreen,.EBOtext{
+        aspect-ratio: 16/1;
+    }
+    
+}
+
+
+@media (500px < width < 625px) {
+    .EBOgreenblack,.EBOgreen,.EBOtext{
+        aspect-ratio: 16/1.5;
+    }
+    
+}
+
+@media (330px < width < 500px) {
+    .EBOgreenblack,.EBOgreen,.EBOtext{
+        aspect-ratio: 16/2.5;
+    }
+    
+}
+
+@media (max-width:330px) {
+    .EBOgreenblack,.EBOgreen,.EBOtext{
+        aspect-ratio: 16/4;
+    }
+    
+}
+
+
+.EBOtext{
+    float: left;
+    margin: 5px 0 5px 8.09444444444444% ;
+    width: 77.1575%;
+    
+    color: #FFF;
+    text-align: center;
+    font-family: IBM Plex Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+
+}
+
+.cross{
+    float: left;
+    margin-left: 4.744444444444%;
+    margin-top: 12px;
+    width: 18.453px;
+    height: 19px;
+    background-image: url('./../../Assests/symbols/cross-image.png');
+}

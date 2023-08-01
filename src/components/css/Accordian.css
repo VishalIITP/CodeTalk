@@ -1,0 +1,47 @@
+/* Accordion.css */
+
+.accordion-container {
+    width: 100%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .accordion-item {
+    border-bottom: 0px solid #ccc;
+  }
+  
+  .accordion-header {
+    color: white;
+    font-size: 18px;
+    font-family: IBM Plex Sans;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #000000;
+  }
+  
+  .accordion-content {
+    padding: 10px;
+    color: #98a2b3;
+    font-size: 14px;
+    font-family: IBM Plex Sans;
+
+  }
+  
+  .accordion-icon {
+    width: 10px;
+    height: 10px;
+    border-left: 3px solid #98A2B3;
+    border-bottom: 3px solid #98A2B3;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+    transition: transform 0.3s ease;
+  }
+  
+  .accordion-icon.expanded {
+    transform: rotate(-225deg);
+  }
+  

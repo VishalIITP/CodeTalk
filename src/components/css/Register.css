@@ -1,0 +1,152 @@
+/* CSS */
+.completeBodyCheckout {
+    padding: 20px;
+    background: #030a21;
+    padding-bottom: 50px;
+  }
+  
+  .bodycontentCheckout {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .topblue {
+    background: #030a21;
+    height: 26px;
+  }
+  
+  .JOSA {
+    margin-top: 20px;
+    width: 96.42861111111%;
+    max-width: 786px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 3px dashed #37ed81;
+  }
+  
+  .josaText {
+    width: 209.503px;
+    margin-top: 13px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 105.5%;
+  }
+  
+  .formbox {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 96.20583333333%;
+    max-width: 798px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    background: #fff;
+  }
+  
+  .formContent {
+    width: 100%;
+    max-width: 718px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .fbgreen {
+    height: 42.5px;
+    border-radius: 2px 2px 0px 0px;
+    background: #37ed81;
+  }
+  
+  .fbgtriangle {
+    margin-top: -4px;
+    margin-left: 10px;
+    width: 16.071px;
+    height: 15px;
+  }
+  
+  .formgreyborder {
+    width: 96.20583333333%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-shrink: 0;
+    padding-bottom: 130px;
+    border-radius: 4px;
+    border: 2px solid #ddd;
+  }
+  
+  .fsbbox {
+    width: 100%;
+  }
+  
+  .formSectionbuttonl {
+    float: left;
+    background: #fff;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    width: 50%;
+    height: 76px;
+    border-top: 2px solid #000;
+  }
+  
+  .formSectionbuttonr {
+    float: left;
+    background: #ebe9eb;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    width: 50%;
+    height: 76px;
+    flex-shrink: 0;
+  }
+  
+  .fbsn {
+    margin-left: 9.45%;
+    float: left;
+    width: 18.482px;
+    color: #000;
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 105.5%;
+  }
+  
+  .fbydbox {
+    margin-top: -2px;
+    margin-left: 40px;
+  }
+  
+  .fbyd {
+    color: #000;
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 105.5%;
+  }
+  
+  .fbfa {
+    margin-top: 5px;
+    margin-left: 10px;
+    text-align: center;
+    color: #000;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 105.5%;
+  }
+  

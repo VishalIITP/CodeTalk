@@ -1,0 +1,141 @@
+/* ResponsiveBox.css */
+
+.enrollNowH
+{
+    width: 100%;
+    margin-top: 40px;
+    letter-spacing: 1px; 
+    text-align: center;   
+}
+
+.byah{
+    color: #FFF;
+    text-align: center;
+    font-family: IBM Plex Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.byat{
+    color: #FFF;
+    text-align: center;
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.enrollNowbox{
+    margin-top: 40px;
+}
+
+
+
+  
+.container {
+    display: flex;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  
+.left-cert box {
+    margin-left: auto;
+    margin-right: auto;
+    flex: 1;
+    font-family: IBM Plex Sans;
+    color: white;
+    background-color: transparent;
+    border:1px solid rgba(255,255,255,.41);
+    border-radius: 11px;
+}
+  
+.right-text{
+    margin-left: auto;
+    margin-right: auto;
+    flex: 1;
+    max-width: 360px;
+    font-family: IBM Plex Sans;
+    color: white;
+    padding: 20px;
+    background-color: #000000;
+    text-align: left;
+}
+  
+/* Media Query for Mobile View */
+@media (max-width: 600px){
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .left-box,
+    .right-text {
+      flex: 100%;
+    }
+}
+  
+
+
+/*Left*/
+.certImagebox{
+    background-image: url('./../../Assests/Images/certificateofcomp.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 212px;
+    width: 300.6px;
+}
+
+.Rgreenbox{
+    height: 50px;
+    width: 70px;
+    border-radius: 130px;
+    background-color: #a6ef67;
+}
+
+.Rvalidate{
+    background-image: url("./../../Assests/symbols/validate.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.Rshowoff{
+    background-image: url("./../../Assests/symbols/mindMap.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.Rheading{
+    font-family: IBM Plex Sans;
+    font-size: 24px;
+    color:white;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-top: 5px;
+
+}
+
+.Rtext{
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    color:white;
+    padding: 10px;
+    margin-bottom: 20px;
+
+}

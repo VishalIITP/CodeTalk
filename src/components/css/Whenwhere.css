@@ -1,0 +1,92 @@
+
+.whenwhereblack{
+    width: 100%;
+    height: 47px; 
+}
+
+.whenwhere{
+    height: 38px;
+    width: 288.10998px;
+    margin-top: 47px;
+    margin: auto;
+}
+
+.when{
+    float: left;  
+    width: 123.11px;
+    height: 36px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid rgba(166, 239, 103, 0.20);
+    background: rgba(166, 239, 103, 0.20);
+}
+
+.where{
+    float: left;
+    margin-left: 37.89px;
+    
+    width: 123.11px;
+    height: 36px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid rgba(166, 239, 103, 0.20);
+    background: rgba(166, 239, 103, 0.20);
+
+}
+
+.calendar{
+    float: left;
+    margin: 9px 6px 9px 6px;
+    width: 19px;
+    height: 19px;
+    flex-shrink: 0;
+    background-image: url('./../../Assests/symbols/calendar.png');
+
+}
+
+.clock{
+    float: left;
+    margin:9px 6px 9px 6px;
+    width: 19px;
+    height: 19px;
+    flex-shrink: 0;
+    background: url('./../../Assests/symbols/clock.png');
+    
+}
+.date{
+    float: left;
+    margin-top: 11px;
+    width: 67.11px;
+    height: 25px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: IBM Plex Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 105.5%; /* 15.825px */
+    letter-spacing: 0.435px;
+
+}
+
+.time{
+    float: left;
+    width: 70.11px;
+    margin-top: 10px;
+    height: 25px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: IBM Plex Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 105.5%; /* 15.825px */
+    letter-spacing: 0.585px;    
+
+}

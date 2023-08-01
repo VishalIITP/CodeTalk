@@ -1,0 +1,30 @@
+.heroT1
+{
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 14px;
+    letter-spacing: 1px; 
+    text-align: center;   
+}
+
+.whiteT1{
+    color: #FFF;
+text-align: center;
+font-family: IBM Plex Sans;
+font-size: 48px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.greenT1{
+    color: #A6EF67;
+font-family: IBM Plex Sans;
+font-size: 48px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+
+}

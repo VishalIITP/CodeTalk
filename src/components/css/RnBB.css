@@ -1,0 +1,122 @@
+
+.bottomRegisterOffer{
+    display: inline;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 75.8px;
+    background: #333333;
+    width: 100%;
+}
+
+@media (min-width:720px) {
+    .bottomRegisterOffer{
+        display: none;
+    }
+    
+}
+
+.bottomOffer{
+    float: left;
+    margin-top: 8px;
+    width:159px ;
+    height: 55px; 
+
+}
+.bottomRegister{
+    float: right;
+    margin-right: 10px;
+    margin-top: 13px;
+    width: 44.196428571428%;
+    height: 49.95px;
+    border-radius: 12px;
+    background: #A6EF67;
+}
+
+
+.brText{
+    margin-top: 17px;
+    margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+    width: 55.05050505050505%;
+    min-width: 109px;
+    color: #000;
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 105.5%; /* 14.77px */
+}
+
+.boPricebox{
+    height:30px;
+
+
+}
+.boPrice{
+    float:left;
+    margin-left:24px;
+    display: flex;
+    width: 54.86px;
+    height: 30px;
+    color: #FFF;
+    text-align: center;
+    font-family: IBM Plex Sans;
+    font-size: 22.4px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 105.5%; /* 23.632px */
+}
+
+.boPricestrike{
+    float:left;
+    margin-left:5.15px;
+    margin-top:7px;
+    color: #FFF;
+    text-align: center;
+    font-family: IBM Plex Sans;
+    font-size: 14.4px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 105.5%; /* 15.192px */
+}
+
+.botimerText{
+    float: left ;
+    margin-left: 12px;
+    width: 200px;
+    height: 33px;
+    color: #FFF;
+    text-align: center;
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 105.5%; /* 16.88px */
+}
+
+.booffertext{
+    float:left;
+    margin-top:2px;
+    color: #FFF;
+    text-align: center;
+    font-family: IBM Plex Sans;
+    font-size: 14.4px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 105.5%; /* 15.192px */
+}
+
+.botimer{
+    float: left;
+    margin-top:3px;
+    margin-left: 5px;
+    color: #FFF;
+    font-family: IBM Plex Sans;
+    font-size: 14.4px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 105.5%;
+
+}

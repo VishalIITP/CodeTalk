@@ -1,0 +1,52 @@
+/* CSS for Videobox */
+.videobox {
+    margin-top: 43px;
+    width: 100%;
+    max-width: 400px; /* Set a maximum width for the video box */
+    max-height: 225px; /* Set a maximum height for the video box */
+    aspect-ratio: 16 / 9; /* Aspect ratio of 16:9 (width / height) */
+    border-radius: 12px;
+    background: #d9d9d9;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.playbutton{
+  top: 50%;
+  transform: translateY(-50%);
+    margin-left:auto; 
+    margin-right: auto ;
+    position: relative;
+    width: 80px;
+    height:80px;
+}
+
+.circleplay{
+    float: left;
+    height: 80px;
+    width: 80px;
+    
+}
+
+.triangleplay{
+    float: left;
+    margin-top: 30%;
+    margin-left: -65%;
+    height: 32px;
+    width: 32px;
+
+}
+
+
+  /* Media query for responsiveness */
+  @media (max-width: 600px) {
+    .videobox {
+      max-width: 100%; /* Full width on smaller screens */
+      max-height: none; /* Remove the maximum height restriction on smaller screens */
+    }
+  
+    
+  }
+  

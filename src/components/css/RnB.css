@@ -1,0 +1,70 @@
+
+.RegisterNow{
+    height: 68px;
+    
+    
+}
+
+.registerbutton{
+    width: 100%;
+    max-width: 470px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    height: 48px;
+    border-radius: 12px;
+    background: #A6EF67;
+
+}
+
+.registerText{ 
+        
+    position: relative;
+    top: 16px;
+    height: 17px;
+    color: #000;
+    text-align: center;
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 105.5%; /* 16.88px */
+
+}
+.timerbox{
+    margin-top: 5px;
+    height: 20px;
+
+}
+.timerText{
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+.line{
+    float: left;
+    margin-right: 5px;
+    height: 20px;
+    width: 0px;
+    border-left: 1px solid white;
+}
+.offertext{
+    float: left;
+    font-size: 14.4px;
+    font-family: IBM Plex Sans;
+    line-height: 105.5%; /* 15.192px */
+    font-weight: 500;
+    font-style: normal;
+    color: #FFF;
+}
+.timer{
+    float: left;
+    margin-left: 5px;
+    color: #FFF;
+    font-family: IBM Plex Sans;
+    font-size: 14.4px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 105.5%;
+}

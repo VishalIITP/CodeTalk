@@ -1,0 +1,147 @@
+
+.coursePlan{
+    margin-top: 86px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.wwylwhite{
+    color: #FFF;
+    font-family: IBM Plex Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 105.5%; /* 33.76px */
+
+}
+
+.wwylgreen{
+    color: #A6EF67;
+    font-family: IBM Plex Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 105.5%;
+}
+
+
+
+
+.CoursePlanContainer{
+    display: flex;
+    margin-top: 48px;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 48px;
+    flex-wrap: wrap;
+}
+
+.CourseWeek{
+    border-radius: 8px;
+    height: 600px;
+    padding-bottom: 20px;
+    min-width: 220px;
+    max-width: 440px;
+    flex: 1 0 0;
+    background: #333;
+}
+
+.courseWeekImg1
+{
+    background-image: url(https://assets.website-files.com/63c698560a57ab3deb917f5a/63c698c294ee732049affe97_darts.svg);
+    height: 128px;
+    width: 128px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.cwline{
+    background-color:rgba(255,255,255,.1);
+    height: 0.5px;
+    
+
+}
+
+.courseWeekImg2
+{
+    background-image: url(	https://assets.website-files.com/63c698560a57ab3deb917f5a/63c698c294ee73201aaffe96_rocket.svg);
+    height: 128px;
+    width: 111.03px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    
+}.courseWeekImg3
+{
+    background-image: url(https://assets.website-files.com/63c698560a57ab3deb917f5a/63c698c294ee730ea1affe98_mfgnifier%20glass.svg);
+    height: 128px;
+    width: 129.05px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    
+}.courseWeekImg4
+{
+    background-image: url("https://assets.website-files.com/63c698560a57ab3deb917f5a/63c698c294ee732372affe99_Frame%201430102250%20(3).svg");
+    height: 128px;
+    width: 172.19px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+.courseWeektext{
+    font: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top:10px;
+}
+
+.courseWeektheading{
+    color: #FFF;
+    font-family: IBM Plex Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 105.5%; /* 33.76px */
+}
+
+.courseWeektdis{
+    margin-top:10px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #d0d5dd;
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 105.5%; /* 33.76px */
+}
+
+.dayItem{
+    border:1px solid white;
+}
