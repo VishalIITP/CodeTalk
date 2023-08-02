@@ -6,7 +6,7 @@ import './../App.css'
 const NewTimer = () => {
   const [timerValue, setTimerValue] = useState(() => {
     const savedValue = sessionStorage.getItem('timerValue');
-    return savedValue ? parseInt(savedValue, 10) : 60; // Change the initial value to 60 seconds
+    return savedValue ? parseInt(savedValue, 10) : 3700; // Change the initial value to 60 seconds
   });
 
   const [isRunning, setIsRunning] = useState(true);
@@ -23,7 +23,7 @@ const NewTimer = () => {
 
   // Function to reset the timer
   const resetTimer = () => {
-    setTimerValue(375); // Reset the timer to 375 seconds
+    setTimerValue(3700); // Reset the timer to 375 seconds
     setIsRunning(true);
   };
 
@@ -36,7 +36,7 @@ const NewTimer = () => {
         setTimerValue((prevValue) => prevValue - 1);
       }, 1000);
     } else if (timerValue === 0) {
-      setInterval(resetTimer,2000); // Start the timer agian when it reaches 0
+      setInterval(resetTimer,30000); // Start the timer agian when it reaches 0
     }
 
     return () => {
@@ -49,8 +49,9 @@ const NewTimer = () => {
     sessionStorage.setItem('timerValue', timerValue.toString());
   }, [timerValue]);
 
-  let minutes=Math.floor(timerValue/60);
-  let seconds=(timerValue%60);
+  let hours=Math.floor(timerValue/3600);
+  let minutes=Math.floor((timerValue%3600)/60);
+  let seconds=(timerValue%3600)%60;
 
   return (
     <>
@@ -59,14 +60,14 @@ const NewTimer = () => {
             <Link className="registerLink" to="/register">
               <div className="registerbutton">
                 <div className="registerText">
-                  Register now for {timerValue? <span>₹499 <strike>₹1499</strike></span>:'₹1499'}
+                  Register now for {timerValue? <span>₹499 <strike>₹999</strike></span>:'₹999'}
                 </div>
               </div>
             </Link>
             <div className="timerbox">
               <div className="timerText">
                 <div className="offertext"><div className='line'></div>offer ends in</div>
-      <div className='timer'>{minutes<=9? `0${minutes}`:minutes} : {seconds<=9?`0${seconds}`:seconds}</div>
+      <div className='timer'>{hours<=9? `0${hours}`:hours}:{minutes<=9? `0${minutes}`:minutes} : {seconds<=9?`0${seconds}`:seconds}</div>
               </div>
             </div>
           </div>

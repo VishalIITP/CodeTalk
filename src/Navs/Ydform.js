@@ -120,7 +120,7 @@ function Ydform() {
        <button className='BBSB' onClick={(!fname || !emailAdd  || !phone)?showError:collectData}>   
           <div className='bbsbtext'>
             <div className='bbsbta'></div>
-            <div className='bbsbtt'>For Special Offer Click Here</div>
+            <div className='bbsbtt'>For this Special Offer Click Here</div>
           </div>
             <div className='bbsbbt'>Yes! I want this offer!</div>
         </button>
