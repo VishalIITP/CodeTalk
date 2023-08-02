@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './../App.css';
 
+const API_PATH=process.env.API_PATH;
+
 function Ydform() {
   const navigate = useNavigate();
 
@@ -53,7 +55,7 @@ function Ydform() {
     localStorage.setItem('phone', phone);
 
     try {
-      let response = await fetch('http://localhost:5000/users/register/', {
+      let response = await fetch(`${API_PATH}/users/register/`, {
         method: 'post',
         body: JSON.stringify({
           FirstName: fname,
