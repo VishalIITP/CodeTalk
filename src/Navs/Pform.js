@@ -44,7 +44,7 @@ function Pform() {
 
         <a
           className="payNow"
-          href="upi://pay/?pn=with%20Upilink.in%20&pa=8303541949@paytm&cu=INR&am=499.0"
+          href="upi://pay/?pn=CodeTalk%20%20&pa=8303541949@paytm&cu=INR&am=499.0"
         >
           <div className="fibox">
             <label className="filabel" htmlFor="vpa">
