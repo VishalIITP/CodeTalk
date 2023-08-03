@@ -16,7 +16,7 @@ function Pform() {
       setVerr("");
 
       try {
-        let response = await fetch("http://localhost:5000/users/register/", {
+        let response = await fetch("https://codetalkbackend.onrender.com/users/register/checkout", {
           method: "put",
           body: JSON.stringify({
             VPA: vpa,
@@ -39,12 +39,12 @@ function Pform() {
   return (
     <div>
       <div className="formInputs">
-        <div className="fit49"></div>
+        <div className="fit49"></div> 
         <div className="fiboxP"></div>
 
         <a
           className="payNow"
-          href="upi://pay?pa=8303541949@Paytm&pn=CodeTalk&am=999&tn=Let%27s%20unlock%20your%20coding%20potential%20together&cu=INR"
+          href="upi://pay/?pn=with%20Upilink.in%20&pa=8303541949@paytm&cu=INR&am=499.0"
         >
           <div className="fibox">
             <label className="filabel" htmlFor="vpa">

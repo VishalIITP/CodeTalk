@@ -57,6 +57,7 @@ function Ydform() {
       let response = await fetch("https://codetalkbackend.onrender.com/users/register/", {
         method: 'post',
         body: JSON.stringify({
+          UserId:`${fname}${phone}`,
           FirstName: fname,
           LastName: lname,
           College: cname,
