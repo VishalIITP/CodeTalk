@@ -99,8 +99,10 @@ bootcampdisc
     background-image: url('./Assests/Images/qr.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
-    height: 400px;
+    background-size: cover;
+    height: 500px;
+    border-radius: 10px;
+    border: 5px solid white;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 16.5px;
@@ -230,3 +232,6 @@ margin-bottom: 20px;
 
 }
 
+.MPOs{
+    cursor:pointer;
+}
