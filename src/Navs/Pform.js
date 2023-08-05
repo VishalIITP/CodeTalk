@@ -39,6 +39,7 @@ function Pform() {
       } catch (error) {
         console.log("Not able to fetch", error);
       }
+        window.location.href="https://codetalk.tech/register/checkout/payment_success";
     }
   }
 
