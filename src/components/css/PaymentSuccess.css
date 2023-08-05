@@ -1,0 +1,50 @@
+
+      .bigBoxblack {
+       
+        background: #000000;
+    
+      }
+      .bigBox {
+        text-align: center;
+        padding: 40px 0;
+        background: #a6ef6733;
+        padding-bottom: 175px;
+
+      }
+        h1 {
+          color: #a6ef67;
+        font-family: IBM Plex Sans;
+
+          font-weight: 900;
+          font-size: 40px;
+          margin-bottom: 10px;
+        }
+        p {
+          color: #ffffff;
+    font-family: IBM Plex Sans;
+
+          font-size:20px;
+          margin: 0;
+        }
+      i {
+        color: #a6ef67;
+        font-size: 100px;
+        line-height: 200px;
+        margin-left:-15px;
+      }
+      .card {
+        background: rgb(0, 0, 0);
+        padding: 60px;
+        border-radius: 4px;
+        box-shadow: 0 2px 3px #a6ef67;
+        display: inline-block;
+        margin: 0 auto;
+      }
+
+      .sbox{
+        border-radius:200px; 
+        height:200px; 
+        width:200px; 
+        background: #a6ef6733; 
+        margin:0 auto;
+      }

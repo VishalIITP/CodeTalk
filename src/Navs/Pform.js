@@ -6,6 +6,12 @@ function Pform() {
   const [vpa, setVpa] = React.useState("");
   const [verr, setVerr] = React.useState("");
 
+  const paymentsPage = () => {
+    window.location.href = "https://cosmofeed.com/vp/64ce5dcc9a8a3e001e2f13e0";
+  }
+
+
+
   const handleVPAChange = (e) => {
     setVpa(e.target.value);
   };
@@ -39,24 +45,22 @@ function Pform() {
   return (
     <div>
       <div className="formInputs">
-        <div className="fit49"></div> 
+        <div className="fit49"></div>
         <div className="fiboxP"></div>
 
-        <a
-          className="payNow"
-          href="upi://pay/?pn=CodeTalk%20%20&pa=8303541949@paytm&cu=INR&am=499.0"
-        >
-          <div className="fibox">
-            <label className="filabel" htmlFor="vpa">
-              <center>
-                Scan QR code
-                <br />
-                or
-              </center>
-            </label>
-            <button className="fiinput">Pay with App</button>
-          </div>
-        </a>
+
+        <div className="fibox">
+          <label className="filabel" htmlFor="vpa">
+            <center>
+              Scan QR code to pay with zero transaction fees
+              <br />
+              or
+            </center>
+          </label>
+      <button className="fiinput MPOs" onClick={paymentsPage} >More Payment options</button>
+      </div>
+       
+
 
         <div className="fibox">
           <label className="filabel" htmlFor="vpa">
