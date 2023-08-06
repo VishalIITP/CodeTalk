@@ -6,15 +6,14 @@
 
 .hiwtext{
     margin-top:101px;
-   height: 105px;
    max-width: 900px;
    margin-left: auto;
    margin-right: auto;
+   margin-bottom: 25px;
    
 }
 
 .hiwtextwhite{
-    float: left;
     color: #FFF;
     width: 100%;
     font-family: IBM Plex Sans;
@@ -25,7 +24,6 @@
 
 }
 .hiwtextgreen{
-    float: left;
     color: #A6EF67;
     width: 100%;
     font-family: IBM Plex Sans;

@@ -29,18 +29,13 @@ function Ydform() {
     setPhone(e.target.value);
   };
 
+  let userId = phone.slice(6, 7) + fname.slice(-2)+phone.slice(8,9)+ cname.slice(-1);   //7th of phone+ last 2 of fname+ 9th of phone+ last of college
+
   const [verr, setVerr] = React.useState('');
 
   const showError = () => {
     setVerr('Please fill the required fields');
   };
-
-
-
-
-
-
-  
 
   async function collectData(e) {
     setVerr('');
@@ -57,7 +52,7 @@ function Ydform() {
       let response = await fetch("https://codetalkbackend.onrender.com/users/register/", {
         method: 'post',
         body: JSON.stringify({
-          UserId:`${fname}${phone}`,
+          UserId:userId,
           FirstName: fname,
           LastName: lname,
           College: cname,
@@ -79,7 +74,7 @@ function Ydform() {
       console.log('Not able to fetch', error);
     }
 
-    navigate('/register/checkout');
+    navigate(`/register/checkout/:${userId}`);
   }
 
   // useEffect to load form data from localStorage when the component mounts

@@ -18,7 +18,7 @@ const BodyMode = (props) => {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/register/checkout" element={<Pform />} />
+        <Route path="/register/checkout/:userId" element={<Pform />} />
         <Route path="/register/checkout/payment_success" element={<PaymentSuccess />} />
       </Routes>
     </>

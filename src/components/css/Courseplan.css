@@ -42,12 +42,14 @@
 
 .CourseWeek{
     border-radius: 8px;
-    height: 600px;
     padding-bottom: 20px;
-    min-width: 220px;
+    min-width: 300px;
     max-width: 440px;
     flex: 1 0 0;
-    background: #333;
+    box-shadow: 2px 2px 2px 2px rgba(138, 133, 133, 0.541);
+    /* background-image: linear-gradient(161deg,transparent,rgba(166,239,103,.14)); */
+
+    background: #000000;
 }
 
 .courseWeekImg1
@@ -60,13 +62,13 @@
     
     background-position: center; 
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     margin-left: auto;
     margin-right: auto;
     
 }
 .cwline{
-    background-color:rgba(255,255,255,.1);
+    background-image: linear-gradient(90deg,#a6ef67,#817f7f);
     height: 0.5px;
     
 
@@ -74,40 +76,40 @@
 
 .courseWeekImg2
 {
-    background-image: url(	https://assets.website-files.com/63c698560a57ab3deb917f5a/63c698c294ee73201aaffe96_rocket.svg);
+    background-image: url('./../../Assests/Images/treeDS.png');
     height: 128px;
     width: 111.03px;
     margin-top: 15px;
     margin-bottom: 15px;
     background-position: center; 
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     margin-left: auto;
     margin-right: auto;
     
 }.courseWeekImg3
 {
-    background-image: url(https://assets.website-files.com/63c698560a57ab3deb917f5a/63c698c294ee730ea1affe98_mfgnifier%20glass.svg);
+    background-image: url('./../../Assests/Images/searching.png');
     height: 128px;
     width: 129.05px;
     margin-top: 15px;
     margin-bottom: 15px;
     background-position: center; 
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     margin-left: auto;
     margin-right: auto;
     
 }.courseWeekImg4
 {
-    background-image: url("https://assets.website-files.com/63c698560a57ab3deb917f5a/63c698c294ee732372affe99_Frame%201430102250%20(3).svg");
+    background-image: url("./../../Assests/Images/recursion.png");
     height: 128px;
-    width: 172.19px;
     margin-top: 15px;
+
     margin-bottom: 15px;
     background-position: center; 
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     margin-left: auto;
     margin-right: auto;
     
@@ -118,7 +120,7 @@
     font: white;
     margin-left: 10px;
     margin-right: 10px;
-    margin-top:10px;
+    margin-top:15px;
 }
 
 .courseWeektheading{
@@ -131,7 +133,7 @@
 }
 
 .courseWeektdis{
-    margin-top:10px;
+    margin-top:15px;
     margin-left: auto;
     margin-right: auto;
     color: #d0d5dd;
@@ -139,9 +141,18 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 105.5%; /* 33.76px */
+    line-height: 150.5%; /* 33.76px */
+}
+
+.dayNO{
+    color: #A6EF67;
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 105.5%;
+
 }
 
 .dayItem{
-    border:1px solid white;
 }

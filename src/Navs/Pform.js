@@ -1,10 +1,13 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 
 import "./../App.css";
 
 function Pform() {
   const [vpa, setVpa] = React.useState("");
   const [verr, setVerr] = React.useState("");
+  const {userId}=useParams();
+  console.log(userId);
 
   const paymentsPage = () => {
     window.location.href = "https://cosmofeed.com/vp/64ce5dcc9a8a3e001e2f13e0";
@@ -25,6 +28,7 @@ function Pform() {
         let response = await fetch("https://codetalkbackend.onrender.com/users/register/checkout", {
           method: "put",
           body: JSON.stringify({
+            UserId:userId,
             VPA: vpa,
             PaymentTime: Date().toLocaleString(),
           }),

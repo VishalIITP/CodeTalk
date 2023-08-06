@@ -7,8 +7,8 @@ function Hitw() {
     <div>
       <div className="HITWORKS">
         <div className="hiwtext">
-          <div className="hiwtextwhite"> Here’s how it works over the </div>
-          <div className="hiwtextgreen">4 weeks</div>
+          <span className="hiwtextwhite"> Here’s how it works over the </span>
+          <span className="hiwtextgreen">4 weeks</span>
         </div>
 
         <div className="bootcampbox">
