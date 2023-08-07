@@ -1,21 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./css/classpic.css"; // You can create your own CSS for styling
-import lpuclass1 from './../Assests/Images/LPUliveclass.png'
+import lpuclass1 from './../Assests/Images/liveclassmeinbig.png'
 import lpuclass2 from './../Assests/Images/livclasstree2.png'
 import lpuclass3 from './../Assests/Images/liveclasstree.png'
 import lpuclass4 from './../Assests/Images/liveclassboard.png'
-import lpuclass5 from './../Assests/Images/liveclassmeinbig.png'
+import lpuclass5 from './../Assests/Images/LPUliveclass.png'
 import lpuclass6 from './../Assests/Images/liveclassfibbonaci.png'
-
-
-
 
 const Classpic = () => {
     const images = [
-        lpuclass1, lpuclass2, lpuclass3,lpuclass4,lpuclass5,lpuclass6
-    ]
+        lpuclass1, lpuclass2, lpuclass3, lpuclass4, lpuclass5, lpuclass6
+    ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
+
+    // Auto slide interval in milliseconds
+    const autoSlideInterval = 5000; // Change this to your desired interval
+
+    useEffect(() => {
+        const intervalId = setInterval(goToNextSlide, autoSlideInterval);
+
+        // Clear interval on component unmount
+        return () => clearInterval(intervalId);
+    }, [currentIndex]);
 
     const goToNextSlide = () => {
         setCurrentIndex((prevIndex) =>
