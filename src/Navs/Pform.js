@@ -26,12 +26,12 @@ function Pform() {
 
       try {
         let response = await fetch("https://codetalkbackend.onrender.com/register/checkout", {
-          method: "put",
-          body: {
+          method: "PUT",
+          body:JSON.stringify({
             UserId:userId,
             VPA: vpa,
             PaymentTime: Date().toLocaleString(),
-          },
+          }),
           headers: {
             "content-type": "Application/json",
           },
