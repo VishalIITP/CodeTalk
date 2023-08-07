@@ -1,5 +1,4 @@
 import React from "react";
-
 import Ydform from "./Ydform";
 
 import './../components/css/Register.css'

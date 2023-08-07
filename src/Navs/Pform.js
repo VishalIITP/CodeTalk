@@ -1,12 +1,13 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-
+import config from "../../config";
 import "./../App.css";
 
 function Pform() {
   const [vpa, setVpa] = React.useState("");
   const [verr, setVerr] = React.useState("");
   const {userId}=useParams();
+  userId=userId.toString();
   console.log(userId);
 
   const paymentsPage = () => {
@@ -25,7 +26,7 @@ function Pform() {
       setVerr("");
 
       try {
-        let response = await fetch("https://codetalkbackend.onrender.com/users/register/checkout", {
+        let response = await fetch(`${config.API_PATH}/users/register/checkout`, {
           method: "put",
           body: JSON.stringify({
             UserId:userId,
