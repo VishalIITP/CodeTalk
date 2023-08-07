@@ -42,12 +42,18 @@
 
 .wwylcard{
     border-radius: 8px;
-
-    height: 363px;
-    min-width: 220px;
-    max-width: 440px;
+    padding-bottom: 25px;
+    min-width: 300px;
+    max-width: 350px;
     flex: 1 0 0;
-    background: #333;
+    background: #101323;
+}
+.imagePart{
+    padding-top: 10px;
+    background:
+    conic-gradient(from 90deg at 1px 1px,#101323 90deg, rgba(255,255,255,.1) 0) 
+    0 0/25px 25px;
+    border-radius: 8px 8px 0px 0px;
 }
 
 .wwylcImg1
@@ -60,28 +66,28 @@
     
     background-position: center; 
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     margin-left: auto;
     margin-right: auto;
     
 }
 .wwylcline{
     background-color:rgba(255,255,255,.1);
-    height: 0.5px;
+    height: 0.75px;
     
 
 }
 
 .wwylcImg2
 {
-    background-image: url(	https://assets.website-files.com/63c698560a57ab3deb917f5a/63c698c294ee73201aaffe96_rocket.svg);
+    background-image: url("https://assets.website-files.com/63c698560a57ab3deb917f5a/63c698c294ee732372affe99_Frame%201430102250%20(3).svg");
     height: 128px;
     width: 111.03px;
     margin-top: 15px;
     margin-bottom: 15px;
     background-position: center; 
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     margin-left: auto;
     margin-right: auto;
     
@@ -94,20 +100,20 @@
     margin-bottom: 15px;
     background-position: center; 
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     margin-left: auto;
     margin-right: auto;
     
 }.wwylcImg4
 {
-    background-image: url("https://assets.website-files.com/63c698560a57ab3deb917f5a/63c698c294ee732372affe99_Frame%201430102250%20(3).svg");
+    background-image: url(	https://assets.website-files.com/63c698560a57ab3deb917f5a/63c698c294ee73201aaffe96_rocket.svg);
     height: 128px;
     width: 172.19px;
     margin-top: 15px;
     margin-bottom: 15px;
     background-position: center; 
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     margin-left: auto;
     margin-right: auto;
     

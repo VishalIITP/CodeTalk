@@ -18,8 +18,8 @@ function CoursePlan() {
                                     <div className="dayItem"><span className='dayNO'>Day 1: </span> Introduction to the Course, Big O Notation, and Complexity Analysis.</div>
                                     <div className="dayItem"><span className='dayNO'>Day 2: </span> Arrays and Strings: Understanding, manipulation, and common problems.</div>
                                     <div className="dayItem"><span className='dayNO'>Day 3: </span> Linked Lists: Singly, Doubly, Circular. Common operations and problems.</div>
-                                    <div className="dayItem"><span className='dayNO'>Day 4: </span> Stacks and Queues: Concepts, appDayItemcations, and problems.</div>
-                                    <div className="dayItem"><span className='dayNO'>Day 5: </span> Live Zoom Meeting: Review of the week's concepts and Q&A session.</div>
+                                    <div className="dayItem"><span className='dayNO'>Day 4: </span> Stacks and Queues: Concepts, applications, and problems.</div>
+                                    <div className="dayItem"><span className='dayNO'>Day 5: </span>  Review of the week's concepts and Q&A session.</div>
                                 </ul>
                             </div>
                         </div>
@@ -33,9 +33,9 @@ function CoursePlan() {
                                 <ul className="weekdetails">
                                     <div className="dayItem"><span className='dayNO'>Day 6: </span> Trees and Binary Trees: Concepts, traversal algorithms, and problems.</div>
                                     <div className="dayItem"><span className='dayNO'>Day 7: </span> Binary Search Trees: Properties, operations, and problems.</div>
-                                    <div className="dayItem"><span className='dayNO'>Day 8: </span> Heaps and Priority Queues: Implementation and appDayItemcations.</div>
+                                    <div className="dayItem"><span className='dayNO'>Day 8: </span> Heaps and Priority Queues: Implementation and applications.</div>
                                     <div className="dayItem"><span className='dayNO'>Day 9:</span> Graphs: Representation, traversal, and common graph algorithms.</div>
-                                    <div className="dayItem"><span className='dayNO'>Day 10:</span> Live Zoom Meeting: Problem-solving session and discussion on tree and graph problems.</div>
+                                    <div className="dayItem"><span className='dayNO'>Day 10:</span>  Problem-solving session and discussion on tree and graph problems.</div>
                                 </ul>
                             </div>
                         </div>
@@ -49,9 +49,9 @@ function CoursePlan() {
                                 <ul className="weekdetails">
                                     <div className="dayItem"><span className='dayNO'>Day 11:</span> Searching Algorithms: Linear and Binary Search, variations, and complexities.</div>
                                     <div className="dayItem"><span className='dayNO'>Day 12:</span> Sorting Algorithms: Bubble, Selection, Insertion, and Merge Sort.</div>
-                                    <div className="dayItem"><span className='dayNO'>Day 13:</span> Divide and Conquer: Recursive approach, problems DayItemke Binary Search.</div>
+                                    <div className="dayItem"><span className='dayNO'>Day 13:</span> Divide and Conquer: Recursive approach, problems like Binary Search.</div>
                                     <div className="dayItem"><span className='dayNO'>Day 14:</span> Dynamic Programming: Concepts and solving DP problems.</div>
-                                    <div className="dayItem"><span className='dayNO'>Day 15:</span> Live Zoom Meeting: DP problems discussion and dynamic programming approach.</div>
+                                    <div className="dayItem"><span className='dayNO'>Day 15:</span>  DP problems discussion and dynamic programming approach.</div>
                                 </ul>
                             </div>
                         </div>
@@ -65,9 +65,9 @@ function CoursePlan() {
                                 <ul className="weekdetails">
                                     <div className="dayItem"><span className='dayNO'>Day 16:</span> Greedy Algorithms: Principles and problems DayItemke Minimum Spanning Trees.</div>
                                     <div className="dayItem"><span className='dayNO'>Day 17:</span> Backtracking: Understanding and solving problems DayItemke N-Queens.</div>
-                                    <div className="dayItem"><span className='dayNO'>Day 18:</span> Bit Manipulation: Basics and appDayItemcations in problem-solving.</div>
+                                    <div className="dayItem"><span className='dayNO'>Day 18:</span> Bit Manipulation: Basics and appcations in problem-solving.</div>
                                     <div className="dayItem"><span className='dayNO'>Day 19:</span> Advanced Topics: Trie, Segment Tree, and Fenwick Tree.</div>
-                                    <div className="dayItem"><span className='dayNO'>Day 20:</span> Live Zoom Meeting: Final problem-solving session, interview tips, and course review.</div>
+                                    <div className="dayItem"><span className='dayNO'>Day 20:</span>  Final problem-solving session, interview tips, and course review.</div>
                                 </ul>
                             </div>
                         </div>

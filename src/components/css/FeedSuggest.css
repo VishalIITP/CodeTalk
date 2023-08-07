@@ -1,0 +1,89 @@
+.feedBox{
+    padding-bottom: 25px;
+    margin-top: 100px;
+}
+
+.feedInputs
+{
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: -40px;
+    padding: 20px;
+    margin-left:auto;
+    margin-right: auto;
+    height: 501px;
+}
+
+
+
+.feedinputbox{
+    width:93.832535%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+
+}
+
+.feedinplabel{
+    margin-top: 5px;
+    margin-bottom: 8px;
+    display: block;
+    width: 100%;
+    color: rgb(177, 170, 170);
+    font-family: IBM Plex Sans;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 105.5%; /* 13.715px */
+
+}
+
+.feedinp{
+    font-size: 16px;
+    color: rgb(177, 170, 170);
+    padding-left: 5px;
+    margin-left:6.93px;
+    display: block;
+    height: 44px;
+    border-radius: 3px;
+    border: 1px solid rgb(177, 170, 170);
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background-color: black;
+
+}
+
+.feedtextarea{
+    color: rgb(177, 170, 170);
+    font-size: 16px;
+    padding-left: 5px;
+    margin-left:6.93px;
+    display: block;
+    height: 200px;
+    border-radius: 3px;
+    border: 1px solid rgb(177, 170, 170);
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background-color: black;
+
+}
+
+.feedsubbutton{
+    text-decoration: none;
+    padding: 5px 10px;
+    border:none;
+    background: none;
+    font-family: IBM Plex Sans;
+    font-weight: 500;
+    border-radius: 2px;
+    background-color: rgb(177, 170, 170);
+}
+
+.thanksff{
+    margin-top: -10px;
+    color: #a6ef67;
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+}
