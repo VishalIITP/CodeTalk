@@ -74,7 +74,7 @@ function Ydform() {
       console.log('Not able to fetch', error);
     }
 
-    navigate(`/register/checkout/:${userId}`);
+    navigate(`/register/checkout/${userId}`);
   }
 
   // useEffect to load form data from localStorage when the component mounts
