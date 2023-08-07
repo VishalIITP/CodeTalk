@@ -5,7 +5,7 @@ import "./../App.css";
 function Pform() {
   const [vpa, setVpa] = React.useState("");
   const [verr, setVerr] = React.useState("");
-  const {userId}=useParams();
+  let {userId}=useParams();
   userId=userId.toString();
   console.log(userId);
 
