@@ -50,7 +50,7 @@ function Ydform() {
 
     try {
       let response = await fetch("https://codetalkbackend.onrender.com/register/", {
-        method: 'post',
+        method: 'POST',
         body: JSON.stringify({
           UserId:userId,
           FirstName: fname,
