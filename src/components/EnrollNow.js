@@ -17,31 +17,39 @@ const EnrollNow = () => {
 
             <div className="price">
               <span className="ENpricegreen">₹499</span>{" "}
-              <strike className="ENprice">₹1499</strike>
+              <strike className="ENprice">₹999</strike>
             </div>
-           
-              <div className="ENP">
-                <div className="ENPtick"></div>
-                <div className="ENPtext">
-                  This is the text content that appears on the left side of the
-                  box. You can replace this with your own content.
-                </div>
+
+            <div className="ENP">
+              <div className="ENPtick"></div>
+              <div className="ENPtext">
+                Dive into a meticulously crafted DSA roadmap.
               </div>
-              <div className="ENP">
-                <div className="ENPtick"></div>
-                <div className="ENPtext">
-                  This is the text content that appears on the left side of the
-                  box. You can replace this with your own content.
-                </div>
+            </div>
+            <div className="ENP">
+              <div className="ENPtick"></div>
+              <div className="ENPtext">
+                Elevate coding skills through daily disciplined practice.
               </div>
-              <div className="ENP">
-                <div className="ENPtick"></div>
-                <div className="ENPtext">
-                  This is the text content that appears on the left side of the
-                  box. You can replace this with your own content.
-                </div>
+            </div>
+            <div className="ENP">
+              <div className="ENPtick"></div>
+              <div className="ENPtext">
+                Engage in interactive Zoom sessions with mentor and peers.
               </div>
-           
+            </div>
+            <div className="ENP">
+              <div className="ENPtick"></div>
+              <div className="ENPtext">
+                Master error-free coding techniques and problem-solving strategies.
+              </div>
+            </div>
+            <div className="ENP">
+              <div className="ENPtick"></div>
+              <div className="ENPtext">
+                Fast-track your placements preparation in just 4 weeks.
+              </div>
+            </div>
 
             <Link className="registerLink" to="/register">
               <div className="enrollNow">
@@ -62,39 +70,34 @@ const EnrollNow = () => {
               <div className="ENP">
                 <div className="RENPtick"></div>
                 <div className="ENPtext">
-                  You will get Lorem Ipsum khkjl
+                  Rich library of coding resources.
                 </div>
               </div>
               <div className="ENP">
                 <div className="RENPtick"></div>
                 <div className="ENPtext">
-                  You will get Lorem Ipsum
+                  Sharpened algorithmic thinking.
                 </div>
               </div>
               <div className="ENP">
                 <div className="RENPtick"></div>
                 <div className="ENPtext">
-                  You will get Lorem Ipsum
+                  Resume Enhancement Guide.
                 </div>
               </div>
               <div className="ENP">
                 <div className="RENPtick"></div>
                 <div className="ENPtext">
-                  You will get Lorem Ipsum
+                  Mock Technical Interviews.
                 </div>
               </div>
               <div className="ENP">
                 <div className="RENPtick"></div>
                 <div className="ENPtext">
-                  You will get Lorem Ipsum
+                  Certificate of achievement.
                 </div>
               </div>
-              <div className="ENP">
-                <div className="RENPtick"></div>
-                <div className="ENPtext">
-                  You will get Lorem Ipsum
-                </div>
-              </div>
+
             </div>
 
             {/*Amazing bonuses */}
@@ -103,39 +106,29 @@ const EnrollNow = () => {
               <div className="ENP">
                 <div className="RENPtick"></div>
                 <div className="ENPtext">
-                  You will get Lorem Ipsum
+                  Insights into Website Building.
                 </div>
               </div>
               <div className="ENP">
                 <div className="RENPtick"></div>
                 <div className="ENPtext">
-                  You will get Lorem Ipsum
+                  MERN Stack Web Development tips.
                 </div>
               </div>
               <div className="ENP">
                 <div className="RENPtick"></div>
                 <div className="ENPtext">
-                  You will get Lorem Ipsum
+                  Portfolio-Ready Projects.
                 </div>
               </div>
               <div className="ENP">
                 <div className="RENPtick"></div>
                 <div className="ENPtext">
-                  You will get Lorem Ipsum
+                  Real-world software dev tips.
                 </div>
               </div>
-              <div className="ENP">
-                <div className="RENPtick"></div>
-                <div className="ENPtext">
-                  You will get Lorem Ipsum
-                </div>
-              </div>
-              <div className="ENP">
-                <div className="RENPtick"></div>
-                <div className="ENPtext">
-                  You will get Lorem Ipsum
-                </div>
-              </div>
+
+
             </div>
           </div>
         </div>

@@ -100,8 +100,8 @@
     background-color: #a6ef67;
 }
 
-.Rvalidate{
-    background-image: url("./../../Assests/symbols/validate.png");
+.RvalidateLPU{
+    background-image: url("./../../Assests/symbols/university.png");
     background-position: center;
     background-repeat: no-repeat;
     float: left;
@@ -112,8 +112,8 @@
     margin-top: 10px;
 }
 
-.Rshowoff{
-    background-image: url("./../../Assests/symbols/mindMap.png");
+.RshowoffLPU{
+    background-image: url("./../../Assests/symbols/corporate.png");
     background-position: center;
     background-repeat: no-repeat;
     float: left;

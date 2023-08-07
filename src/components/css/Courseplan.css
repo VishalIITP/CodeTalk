@@ -46,17 +46,15 @@
     min-width: 300px;
     max-width: 440px;
     flex: 1 0 0;
-    box-shadow: 2px 2px 2px 2px rgba(138, 133, 133, 0.541);
     /* background-image: linear-gradient(161deg,transparent,rgba(166,239,103,.14)); */
 
-    background: #000000;
+    background: #101323;
 }
 
 .courseWeekImg1
 {
     background-image: url('./../../Assests/Images/array.png');
     height: 128px;
-    width: 128px;
     margin-top: 15px;
     margin-bottom: 15px;
     
@@ -78,7 +76,6 @@
 {
     background-image: url('./../../Assests/Images/treeDS.png');
     height: 128px;
-    width: 111.03px;
     margin-top: 15px;
     margin-bottom: 15px;
     background-position: center; 
@@ -91,7 +88,6 @@
 {
     background-image: url('./../../Assests/Images/searching.png');
     height: 128px;
-    width: 129.05px;
     margin-top: 15px;
     margin-bottom: 15px;
     background-position: center; 
@@ -99,13 +95,11 @@
     background-size: contain;
     margin-left: auto;
     margin-right: auto;
-    
 }.courseWeekImg4
 {
     background-image: url("./../../Assests/Images/recursion.png");
     height: 128px;
     margin-top: 15px;
-
     margin-bottom: 15px;
     background-position: center; 
     background-repeat: no-repeat;

@@ -44,4 +44,8 @@
   .accordion-icon.expanded {
     transform: rotate(-225deg);
   }
+
+  .accordion-title{
+    margin-right: 10px;
+  }
   
