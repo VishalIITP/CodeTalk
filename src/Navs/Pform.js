@@ -30,7 +30,7 @@ function Pform() {
           body:JSON.stringify({
             UserId:userId,
             VPA: vpa,
-            PaymentTime: Date().toLocaleString(),
+            PTime: Date().toLocaleString(),
           }),
           headers: {
             "content-type": "Application/json",
