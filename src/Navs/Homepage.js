@@ -61,7 +61,7 @@ const Homepage = () => {
 
           <RnB />
           <div className="height20"></div>
-          <Classpic/>
+          <Classpic />
           <Accordian />
           <FeedSuggest />
           <RnBB />{/* RnBB: Register Now Button Bottom Sticky */}

@@ -1,0 +1,126 @@
+/*Ydform*/
+
+.formInputs {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 55px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 560px;
+}
+
+.fibox {
+  height: 71px;
+  width: 93.832535%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+
+.filabel {
+  margin-top: 5px;
+  margin-bottom: 8px;
+  display: block;
+  width: 100%;
+  color: #000;
+  font-family: IBM Plex Sans;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 105.5%; /* 13.715px */
+}
+
+.fiinput {
+  font-size: 16px;
+  padding-left: 5px;
+  margin-left: 6.93px;
+  display: block;
+  height: 44px;
+  border-radius: 3px;
+  border: 1px solid #000;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  font-size: 16px;
+}
+
+/*Bottom Blue Submit Button*/
+.BBSB {
+  margin-top: 27px;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  width: 81.126874039279%;
+  border-radius: 3px;
+  background: #030a21;
+  margin-left: 9.5281691080242%;
+  margin-bottom: 25px;
+}
+
+.bbsbtext {
+  margin-top: 20px;
+  color: #fff;
+  text-align: center;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  line-height: 105.5%; /* 16.88px */
+  letter-spacing: -0.08px;
+}
+
+/* .bbsbta{
+    background-image: url();
+
+} */
+
+.bbsbtt {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.bbsbttP {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.bbsbbt {
+  margin-top: 7px;
+  color: #fff;
+  text-align: center;
+  font-family: IBM Plex Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 105.5%; /* 14.77px */
+  letter-spacing: -0.07px;
+  margin-bottom: 20px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+  .formInputs {
+    max-width: 100%;
+  }
+  .fibox {
+    margin-bottom: -5px;
+  }
+  .fiinput {
+    height: 35px;
+  }
+  .fibox {
+    height: 65px;
+  }
+  .formInputs {
+    margin-top: 0px;
+    height: 440px;
+  }
+  .BBSB {
+    margin-top: 30px;
+  }
+}

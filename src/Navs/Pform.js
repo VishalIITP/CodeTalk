@@ -5,8 +5,8 @@ import "./../App.css";
 function Pform() {
   const [vpa, setVpa] = React.useState("");
   const [verr, setVerr] = React.useState("");
-  let {userId}=useParams();
-  userId=userId.toString();
+  let { userId } = useParams();
+  userId = userId.toString();
   console.log(userId);
 
   const paymentsPage = () => {
@@ -27,8 +27,8 @@ function Pform() {
       try {
         let response = await fetch("https://codetalkbackend.onrender.com/register/checkout", {
           method: "PUT",
-          body:JSON.stringify({
-            UserId:userId,
+          body: JSON.stringify({
+            UserId: userId,
             VPA: vpa,
             PTime: Date().toLocaleString(),
           }),
@@ -43,7 +43,7 @@ function Pform() {
       } catch (error) {
         console.log("Not able to fetch", error);
       }
-        window.location.href="https://codetalk.tech/register/checkout/payment_success";
+      window.location.href = "https://codetalk.tech/register/checkout/payment_success";
     }
   }
 
@@ -62,9 +62,9 @@ function Pform() {
               or
             </center>
           </label>
-      <button className="fiinput MPOs" onClick={paymentsPage} >More Payment options</button>
-      </div>
-       
+          <button className="fiinput MPOs" onClick={paymentsPage} >More Payment options</button>
+        </div>
+
 
 
         <div className="fibox">
