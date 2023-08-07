@@ -120,7 +120,7 @@ function Ydform() {
         </div>
         <div className='fibox'>
           <label className='filabel' htmlFor='refrrcode'>Apply Referral Code</label>
-          <input className='fiinput' id='refrrcode' type='tel' value={refrrcode} onChange={handleRCChange}></input>
+          <input className='fiinput' id='refrrcode' type='text' value={refrrcode} onChange={handleRCChange}></input>
           <span className="ferr">{verr}</span>
         </div>
 
