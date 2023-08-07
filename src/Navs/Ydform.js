@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './../App.css';
+import './../components/css/Ydform.css'
 
 
 function Ydform() {
@@ -12,6 +13,7 @@ function Ydform() {
   const [cname, setCname] = React.useState(localStorage.getItem('cname') || '');
   const [emailAdd, setEmailAdd] = React.useState(localStorage.getItem('emailAdd') || '');
   const [phone, setPhone] = React.useState(localStorage.getItem('phone') || '');
+  const [refrrcode, setRefrrcode] = React.useState('');
 
   const handleFNChange = (e) => {
     setFname(e.target.value);
@@ -28,8 +30,12 @@ function Ydform() {
   const handlePChange = (e) => {
     setPhone(e.target.value);
   };
+  const handleRCChange = (e) => {
+    setRefrrcode(e.target.value);
+  };
 
-  let userId = phone.slice(6, 7) + fname.slice(-2)+phone.slice(8,9)+ cname.slice(-1);   //7th of phone+ last 2 of fname+ 9th of phone+ last of college
+  let userId = phone.slice(6, 7) + fname.slice(-2) + phone.slice(8, 9) + cname.slice(-1);   //7th of phone+ last 2 of fname+ 9th of phone+ last of college
+  let uRC = "CT" + phone.slice(6, 7) + fname.slice(-2) + phone.slice(8, 9) + cname.slice(-1);   //7th of phone+ last 2 of fname+ 9th of phone+ last of college
 
   const [verr, setVerr] = React.useState('');
 
@@ -49,15 +55,17 @@ function Ydform() {
     localStorage.setItem('phone', phone);
 
     try {
-      let response = await fetch("http://localhost:5000/register/", {
+      let response = await fetch("https://codetalkbackend.onrender.com/register/", {
         method: 'POST',
         body: JSON.stringify({
-          UserId:userId,
+          UserId: userId,
+          UserRefrralCode: uRC,
           FirstName: fname,
           LastName: lname,
           College: cname,
           Email: emailAdd,
           Phone: phone,
+          RefrrelCodeApplied: refrrcode,
           Time: Date().toLocaleString(),
           VPA: 'payment not done',
           PTime: 'payment not done',
@@ -87,42 +95,46 @@ function Ydform() {
   }, []);
   return (
     <div>
-        <div className='formInputs'>
-            
-            <div className='fit49'></div>
-            <div className='fibox'>
-                <label className='filabel' htmlFor='fname'>First Name<span className="fmandatory">*</span></label>
-                <input className='fiinput' id='fname'  value={fname} onChange={handleFNChange}></input>
-            </div>
-            <div className='fibox'>
-                <label className='filabel' htmlFor='lname'>Last Name</label>
-                <input className='fiinput' id='lname'value={lname} onChange={handleLNChange}></input>
-            </div>
-            <div className='fibox'>
-                <label className='filabel' htmlFor='clname'>College Name<span className="fmandatory">*</span></label>
-                <input className='fiinput' id='clname'value={cname} onChange={handleCNChange}></input>
-            </div>
-            <div className='fibox'>
-                <label className='filabel' htmlFor='emailA'>Email Address<span className="fmandatory">*</span></label>
-                <input className='fiinput' id='emailA' type='email'  value={emailAdd} onChange={handleEAChange}></input>
-            </div>
-            <div className='fibox'>
-                <label className='filabel' htmlFor='phone'>Phone<span className="fmandatory">*</span></label>
-                <input className='fiinput' id='phone' type='tel' value={phone} onChange={handlePChange}></input>
-            </div>
-        <span className="ferr filabel">{verr}</span>
+      <div className='formInputs'>
 
-              {/* Bottom Blue Submit Button */}
-       <button className='BBSB' onClick={(!fname || !emailAdd  || !phone)?showError:collectData}>   
+        <div className='fit49'></div>
+        <div className='fibox'>
+          <label className='filabel' htmlFor='fname'>First Name<span className="fmandatory">*</span></label>
+          <input className='fiinput' id='fname' value={fname} onChange={handleFNChange}></input>
+        </div>
+        <div className='fibox'>
+          <label className='filabel' htmlFor='lname'>Last Name</label>
+          <input className='fiinput' id='lname' value={lname} onChange={handleLNChange}></input>
+        </div>
+        <div className='fibox'>
+          <label className='filabel' htmlFor='clname'>College Name<span className="fmandatory">*</span></label>
+          <input className='fiinput' id='clname' value={cname} onChange={handleCNChange}></input>
+        </div>
+        <div className='fibox'>
+          <label className='filabel' htmlFor='emailA'>Email Address<span className="fmandatory">*</span></label>
+          <input className='fiinput' id='emailA' type='email' value={emailAdd} onChange={handleEAChange}></input>
+        </div>
+        <div className='fibox'>
+          <label className='filabel' htmlFor='phone'>Phone<span className="fmandatory">*</span></label>
+          <input className='fiinput' id='phone' type='tel' value={phone} onChange={handlePChange}></input>
+        </div>
+        <div className='fibox'>
+          <label className='filabel' htmlFor='refrrcode'>Apply Referral Code</label>
+          <input className='fiinput' id='refrrcode' type='tel' value={refrrcode} onChange={handleRCChange}></input>
+          <span className="ferr">{verr}</span>
+        </div>
+
+        {/* Bottom Blue Submit Button */}
+        <button className='BBSB' onClick={(!fname || !emailAdd || !phone) ? showError : collectData}>
           <div className='bbsbtext'>
             <div className='bbsbta'></div>
             <div className='bbsbtt'>For this Special Offer Click Here</div>
           </div>
-            <div className='bbsbbt'>Yes! I want this offer!</div>
+          <div className='bbsbbt'>Yes! I want this offer!</div>
         </button>
-        </div>
-        </div>
-  ) 
+      </div>
+    </div>
+  )
 }
 
 export default Ydform
