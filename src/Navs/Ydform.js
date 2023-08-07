@@ -49,7 +49,7 @@ function Ydform() {
     localStorage.setItem('phone', phone);
 
     try {
-      let response = await fetch("https://codetalkbackend.onrender.com/users/register/", {
+      let response = await fetch("https://codetalkbackend.onrender.com/register/", {
         method: 'post',
         body: JSON.stringify({
           UserId:userId,
