@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './../App.css';
+import config from '../../config';
 
 
 function Ydform() {
@@ -49,7 +50,7 @@ function Ydform() {
     localStorage.setItem('phone', phone);
 
     try {
-      let response = await fetch("https://codetalkbackend.onrender.com/users/register/", {
+      let response = await fetch(`${config.API_PATH}/users/register/`, {
         method: 'post',
         body: JSON.stringify({
           UserId:userId,
