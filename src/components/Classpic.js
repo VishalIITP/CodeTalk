@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./css/classpic.css"; // You can create your own CSS for styling
-import lpuclass1 from './../Assests/Images/liveclassmeinbig.png'
+import lpuclass1 from './../Assests/Images/liveclassmeinbig.jpg'
 import lpuclass2 from './../Assests/Images/livclasstree2.png'
 import lpuclass3 from './../Assests/Images/liveclasstree.png'
 import lpuclass4 from './../Assests/Images/liveclassboard.png'
