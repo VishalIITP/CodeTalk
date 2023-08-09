@@ -1,8 +1,12 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./../App.css";
+const API_PATH=process.env.REACT_APP_API_PATH;
 
 function Pform() {
+  const navigate=useNavigate();
+
   const [vpa, setVpa] = React.useState("");
   const [verr, setVerr] = React.useState("");
   let { userId } = useParams();
@@ -23,9 +27,9 @@ function Pform() {
       setVerr("Invalid VPA");
     } else {
       setVerr("");
-
+      navigate('/register/checkout/payment_success');
       try {
-        let response = await fetch("https://codetalkbackend.onrender.com/register/checkout", {
+        let response = await fetch(`${API_PATH}/register/checkout`, {
           method: "PUT",
           body: JSON.stringify({
             UserId: userId,
@@ -43,7 +47,6 @@ function Pform() {
       } catch (error) {
         console.log("Not able to fetch", error);
       }
-      window.location.href = "https://codetalk.tech/register/checkout/payment_success";
     }
   }
 
