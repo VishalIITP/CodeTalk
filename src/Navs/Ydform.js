@@ -3,6 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import './../App.css';
 import './../components/css/Ydform.css'
 
+const API_PATH=process.env.REACT_APP_API_PATH;
+
+
 
 function Ydform() {
   const navigate = useNavigate();
@@ -54,8 +57,10 @@ function Ydform() {
     localStorage.setItem('emailAdd', emailAdd);
     localStorage.setItem('phone', phone);
 
+    navigate(`/register/checkout/${userId}`);
+
     try {
-      let response = await fetch("https://codetalkbackend.onrender.com/register/", {
+      let response = await fetch(`${API_PATH}/register/`, {
         method: 'POST',
         body: JSON.stringify({
           UserId: userId,
@@ -82,7 +87,7 @@ function Ydform() {
       console.log('Not able to fetch', error);
     }
 
-    navigate(`/register/checkout/${userId}`);
+    
   }
 
   // useEffect to load form data from localStorage when the component mounts

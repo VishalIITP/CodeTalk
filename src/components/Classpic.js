@@ -22,8 +22,8 @@ const Classpic = () => {
 
         // Clear interval on component unmount
         return () => clearInterval(intervalId);
+        // eslint-disable-next-line
     }, [currentIndex]);
-
     const goToNextSlide = () => {
         setCurrentIndex((prevIndex) =>
             prevIndex === images.length - 1 ? 0 : prevIndex + 1
