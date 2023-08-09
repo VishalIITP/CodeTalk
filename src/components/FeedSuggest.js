@@ -1,7 +1,10 @@
 import React from "react";
 import './css/FeedSuggest.css'
 
+const API_PATH=process.env.REACT_APP_API_PATH
+
 const FeedSuggest = () => {
+
     const [fname, setFname] = React.useState(localStorage.getItem("fname") || '');
     const [cname, setCname] = React.useState(localStorage.getItem("cname") || '');
     const [feed, setFeed] = React.useState();
@@ -35,7 +38,7 @@ const FeedSuggest = () => {
         setFeedsub(true);
 
         try {
-            const feedresponse = await fetch("https://codetalkbackend.onrender.com/feedback",
+            const feedresponse = await fetch(`${API_PATH}/feedback`,
                 {
                     method: 'POST',
                     body: JSON.stringify({
