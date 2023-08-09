@@ -2,11 +2,11 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import "./../App.css";
-const API_PATH=process.env.REACT_APP_API_PATH;
+import './../components/css/Ydform.css'
+const API_PATH = process.env.REACT_APP_API_PATH;
 
 function Pform() {
-  const navigate=useNavigate();
-
+  const navigate = useNavigate();
   const [vpa, setVpa] = React.useState("");
   const [verr, setVerr] = React.useState("");
   let { userId } = useParams();
@@ -16,9 +16,6 @@ function Pform() {
   const paymentsPage = () => {
     window.location.href = "https://cosmofeed.com/vp/64ce5dcc9a8a3e001e2f13e0";
   }
-
-
-
   const handleVPAChange = (e) => {
     setVpa(e.target.value);
   };
@@ -49,14 +46,11 @@ function Pform() {
       }
     }
   }
-
   return (
     <div>
       <div className="formInputs">
         <div className="fit49"></div>
         <div className="fiboxP"></div>
-
-
         <div className="fibox">
           <label className="filabel" htmlFor="vpa">
             <center>
@@ -67,9 +61,6 @@ function Pform() {
           </label>
           <button className="fiinput MPOs" onClick={paymentsPage} >More Payment options</button>
         </div>
-
-
-
         <div className="fibox">
           <label className="filabel" htmlFor="vpa">
             VPA <span className="fmandatory">*</span>
@@ -83,7 +74,7 @@ function Pform() {
             placeholder="Your UPI ID : expample@paytm"
             onChange={handleVPAChange}
           ></input>
-          <span className="ferr filabel">{verr}</span>
+          <span className="ferr">{verr}</span>
         </div>
         {/* Bottom Blue Submit Button */}
         <button className="BBSB" onClick={collectData}>
