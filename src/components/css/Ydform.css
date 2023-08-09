@@ -108,7 +108,11 @@
     max-width: 100%;
   }
   .fibox {
-    margin-bottom: -5px;
+    
+    margin-bottom: -4px;
+  }
+  .filabel{
+    margin-bottom: 2px;
   }
   .fiinput {
     height: 35px;
