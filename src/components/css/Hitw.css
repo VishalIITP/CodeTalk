@@ -42,7 +42,7 @@
     margin-right: auto;
     border-radius: 8px;
     background: #101323;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     color: #FFF;
     font-family: IBM Plex Sans;
     font-size: 24px;
@@ -74,7 +74,6 @@
     float: left;
     position: relative;
     left:10px;
-    width: 59.81025%;
     height: 25.32px;
     margin-top:25.32px; 
     flex-shrink: 0;
@@ -96,7 +95,7 @@
     font-family: IBM Plex Sans;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 105.5%; /* 14.77px */
     margin-top: 24px;
     
@@ -131,7 +130,7 @@
     color: #a6ef67;
     font-family: IBM Plex Sans;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 105.5%; /* 25.32px */
 
 }
