@@ -1,13 +1,15 @@
 import React from "react";
 import './css/FeedSuggest.css'
 
-const API_PATH=process.env.REACT_APP_API_PATH
+const API_PATH = process.env.REACT_APP_API_PATH
 
 const FeedSuggest = () => {
 
     const [fname, setFname] = React.useState(localStorage.getItem("fname") || '');
     const [cname, setCname] = React.useState(localStorage.getItem("cname") || '');
-    const [feed, setFeed] = React.useState();
+    const [feed, setFeed] = React.useState("");
+    const [incomp, setIncomp] = React.useState(false);
+
 
     const [feedsub, setFeedsub] = React.useState(false);
 
@@ -27,8 +29,13 @@ const FeedSuggest = () => {
         }, 2000);
     }
 
+    const showErr = () => {
+        setIncomp(true);
+    }
+
 
     const submitFeedback = async (e) => {
+        setIncomp(false);
         e.preventDefault();
         localStorage.setItem('fname', fname);
         localStorage.setItem('cname', cname);
@@ -86,8 +93,9 @@ const FeedSuggest = () => {
                         <label className='feedinplabel' htmlFor='clname'>Suggestions or Feedback</label>
                         <textarea className='feedtextarea' type="textarea" id='clname' value={feed} onChange={handleFEEDChange}></textarea>
                     </div>
-                    <div className='feedinputbox'><button className='feedsubbutton' onClick={submitFeedback}>Submit</button></div>
+                    <div className='feedinputbox'><button className='feedsubbutton' onClick={feed.length > 5 ? submitFeedback : showErr}>Submit</button></div>
                     <div className='feedinputbox'><div className="thanksff" style={{ display: feedsub ? "block" : "none" }}>Thank You for sharing you insights!</div></div>
+                    <div className='feedinputbox'><div className="ferr" style={{ display: incomp ? "block" : "none" }}>Error: Please provide more details before submitting.</div></div>
 
                 </div>
 
