@@ -8,7 +8,7 @@ import { price,strikePrice,timerTime} from '../Navs/Globalvars';
 const NewTimer = () => {
   const [timerValue, setTimerValue] = useState(() => {
     const savedValue = sessionStorage.getItem('timerValue');
-    return savedValue ? parseInt(savedValue, 10) : 3700; // Change the initial value to 3700 seconds
+    return savedValue ? parseInt(savedValue, 10) : timerTime; // Change the initial value to 3700 seconds
   });
 
   const [isRunning, setIsRunning] = useState(true);
@@ -25,7 +25,7 @@ const NewTimer = () => {
 
   // Function to reset the timer
   const resetTimer = () => {
-    setTimerValue(3700); // Reset the timer to 3700 seconds
+    setTimerValue(timerTime); // Reset the timer to 3700 seconds
     setIsRunning(true);
   };
 
