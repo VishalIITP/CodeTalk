@@ -3,10 +3,12 @@ import { Link } from 'react-router-dom';
 import './css/RnB.css'
 import './../App.css'
 
+import { price,strikePrice,timerTime} from '../Navs/Globalvars';
+
 const NewTimer = () => {
   const [timerValue, setTimerValue] = useState(() => {
     const savedValue = sessionStorage.getItem('timerValue');
-    return savedValue ? parseInt(savedValue, 10) : 3700; // Change the initial value to 60 seconds
+    return savedValue ? parseInt(savedValue, 10) : 3700; // Change the initial value to 3700 seconds
   });
 
   const [isRunning, setIsRunning] = useState(true);
@@ -23,7 +25,7 @@ const NewTimer = () => {
 
   // Function to reset the timer
   const resetTimer = () => {
-    setTimerValue(3700); // Reset the timer to 375 seconds
+    setTimerValue(3700); // Reset the timer to 3700 seconds
     setIsRunning(true);
   };
 
@@ -60,7 +62,7 @@ const NewTimer = () => {
             <Link className="registerLink" to="/register">
               <div className="registerbutton">
                 <div className="registerText">
-                  Register now for {timerValue? <span>₹499 <strike>₹999</strike></span>:'₹999'}
+                  Register now for {timerValue? <span>₹{price} <strike>₹{strikePrice}</strike></span>:'₹999'}
                 </div>
               </div>
             </Link>

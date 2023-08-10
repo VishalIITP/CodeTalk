@@ -3,10 +3,12 @@ import React, { useState, useEffect } from "react";
 import './../App.css'
 import './css/RnBB.css'
 
+import {price, strikePrice, } from './../Navs/Globalvars'
+
 const NewTimer = () => {
   const [timerValue, setTimerValue] = useState(() => {
     const savedValue = sessionStorage.getItem("timerValue");
-    return savedValue ? parseInt(savedValue, 10) : 3700; // Change the initial value to 60 seconds
+    return savedValue ? parseInt(savedValue, 10) : 3700; // Change the initial value to 3700 seconds
   });
 
   const [isRunning, setIsRunning] = useState(true);
@@ -58,10 +60,10 @@ const NewTimer = () => {
       <div className="bottomRegisterOffer">
         <div className="bottomOffer">
           <div className="boPricebox">
-          {timerValue? <span> <div className="boPrice">₹499</div>
+          {timerValue? <span> <div className="boPrice">₹{price}</div>
             <div className="boPricestrike">
               <strike>₹999</strike>
-            </div></span>:<div className="boPrice">₹999</div>}
+            </div></span>:<div className="boPrice">₹{strikePrice}</div>}
           </div>
           <div className="boTimerboox">
             <div className="botimerText">
