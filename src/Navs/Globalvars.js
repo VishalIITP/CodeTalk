@@ -1,4 +1,4 @@
-const price =299;
+const price =349;
 const strikePrice=999;
 const wwDate="16th Aug";
 const wwTime="07:00PM";
