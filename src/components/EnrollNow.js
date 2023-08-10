@@ -4,6 +4,8 @@ import "./css/Wwyl.css";
 import "./../App.css";
 import { Link } from "react-router-dom";
 
+import { price,strikePrice } from "../Navs/Globalvars";
+
 const EnrollNow = () => {
   return (
     <>
@@ -16,8 +18,8 @@ const EnrollNow = () => {
             <div className="ENheading">30 Days DSA Bootcamp</div>
 
             <div className="price">
-              <span className="ENpricegreen">₹499</span>{" "}
-              <strike className="ENprice">₹999</strike>
+              <span className="ENpricegreen">₹{price}</span>{" "}
+              <strike className="ENprice">₹{strikePrice}</strike>
             </div>
 
             <div className="ENP">

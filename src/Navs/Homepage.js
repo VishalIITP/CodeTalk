@@ -23,6 +23,7 @@ import Classpic from "../components/Classpic";
 // import calendar from './../../Assests/symbols/calendar.png'
 // import clock from './../../Assests/symbols/clock.png'
 
+
 const Homepage = () => {
   return (
     <div>
