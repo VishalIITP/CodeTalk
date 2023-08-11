@@ -39,7 +39,8 @@ const Classpic = () => {
     return (
         <>
             <div className="enrollNowH">
-                <div className="byahSlide">LPU live class Snapshots</div>
+                <div className="byahSlide">Sanpshot of classes</div>
+                <div className="byat">at Lovely Professional University</div>
             </div>
             <div className="image-slider">
                 <button className="prev-button" onClick={goToPrevSlide}>
