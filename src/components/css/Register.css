@@ -151,8 +151,32 @@
   }
   
   .refDetails{
-   color: #FFD700;
+   color: #D4AF37;
    font-size: 16px;
-   margin-left: 55px;
+   margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 96.20583333333%;
+    max-width: 798px;
+    padding-bottom: 20px;
+    border-radius: 8px;
 
   }
+  .refDetails {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+    padding: 20px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .referalC {
+    font-size: 24px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
+    line-height: 105.5%;
+  }
+
+
+  
+  
