@@ -6,6 +6,8 @@ import "./../components/css/Pform.css"
 import './../components/css/Ydform.css'
 import qrcwithoutRC from './../Assests/Images/qr.jpg';
 import qrcwithRC from './../Assests/Images/qrwithDisc.jpg';
+import { price} from '../Navs/Globalvars';
+
 
 import { rcApp } from "./Ydform";
 
@@ -55,7 +57,7 @@ function Pform() {
   return (
     <div>
       <div className="PformInputs">
-        <div className="fit49"></div>
+        <div className="fit49">{rcApp?(<div className="disc">Referral Code Applied flat 5% off Pay ₹334 <strike>₹{price}</strike></div>):(<></>)}</div>
         <div className="fiboxPimg"><img className="qrImage" src={rcApp?qrcwithRC:qrcwithoutRC} alt={"Payment Qr Code"}></img></div>
         <div className="Pfibox">
           <label className="filabel" htmlFor="vpa">
