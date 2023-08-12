@@ -128,3 +128,22 @@
     margin-top: 30px;
   }
 }
+
+.failRC{
+  color: #ff0000;
+    font-family: IBM Plex Sans;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 105.5%; /* 13.715px */
+}
+
+.succRC{
+    margin-top: 7px;
+    color:#FFD700;
+    font-family: IBM Plex Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 105.5%; /* 13.715px */
+}
