@@ -43,7 +43,7 @@ function Ydform() {
     console.log(enteredReffCode);
     if (enteredReffCode.length === 7) {
       try {
-        let response = await fetch(`${API_PATH}/${enteredReffCode}`)
+        let response = await fetch(`${API_PATH}/referral/${enteredReffCode}`)
         if (response.ok) {
           console.log("Response was Ok");
           console.log("Validated Referral Code: ", enteredReffCode)
