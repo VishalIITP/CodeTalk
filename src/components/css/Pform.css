@@ -7,6 +7,7 @@
   margin-top: 55px;
   margin-left: auto;
   margin-right: auto;
+  border: 1px solid black;
 }
 
 .fiboxPimg {
@@ -75,4 +76,15 @@
     .PBBSB{
       margin-top: 7px;
     }
+  }
+
+  .disc{
+    margin-top: 7px;
+    padding-left: 10px;
+    color:#d4af37;
+    font-family: IBM Plex Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 105.5%; /* 13.715px */
   }
