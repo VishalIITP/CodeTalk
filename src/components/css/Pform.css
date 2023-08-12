@@ -1,0 +1,78 @@
+.PformInputs {
+  max-width: 500px;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  margin-top: 55px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fiboxPimg {
+  /* background-image: url('./Assests/Images/qr.jpg'); */
+  width: 93.832535%;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16.5px;
+}
+
+.Pfibox {
+  height: 71px;
+  width: 93.832535%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.qrImage {
+  object-fit: contain;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Pfiinput {
+  font-size: 16px;
+  padding-left: 5px;
+  display: block;
+  height: 44px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: 1px solid #000;
+  font-size: 16px;
+}
+
+
+
+.PBBSB {
+  margin-top: 20px;
+  color: white;
+  border: none;
+  font: IBM Plex Sans;
+  cursor: pointer;
+  outline: inherit;
+  width: 81.126874039279%;
+  border-radius: 3px;
+  background: #030a21;
+  margin-left: 9.5281691080242%;
+}
+
+.payNow {
+  text-decoration: none;
+}
+
+
+@media (max-width: 395px) {
+   
+   
+    .qrImage{
+        object-fit: cover;
+        
+    }
+    .PBBSB{
+      margin-top: 7px;
+    }
+  }

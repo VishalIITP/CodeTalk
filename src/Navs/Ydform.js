@@ -5,7 +5,7 @@ import './../components/css/Ydform.css'
 
 const API_PATH = process.env.REACT_APP_API_PATH;
 
-
+export var rcApp=false;
 
 function Ydform() {
   const navigate = useNavigate();
@@ -48,6 +48,7 @@ function Ydform() {
           console.log("Response was Ok");
           console.log("Validated Referral Code: ", enteredReffCode)
           setRcvalidated(true);
+          
           const data = await response.json();
           setStuddata(data);
         } else {
@@ -74,7 +75,7 @@ function Ydform() {
   async function collectData(e) {
     setVerr('');
     e.preventDefault();
-
+    if(rcvalidated&& refrrcode.length===7) {rcApp=true;}
     // Save the form data to localStorage before making the API call
     localStorage.setItem('fname', fname);
     localStorage.setItem('lname', lname);

@@ -1,14 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import "./../App.css";
+import "./../components/css/Pform.css"
 import './../components/css/Ydform.css'
+import qrcwithoutRC from './../Assests/Images/qr.jpg';
+import qrcwithRC from './../Assests/Images/qrwithDisc.jpg';
+
+import { rcApp } from "./Ydform";
+
 const API_PATH = process.env.REACT_APP_API_PATH;
 
 function Pform() {
   const navigate = useNavigate();
-  const [vpa, setVpa] = React.useState("");
-  const [verr, setVerr] = React.useState("");
+  const [vpa, setVpa] = useState("");
+  const [verr, setVerr] = useState("");
   let { userId } = useParams();
   userId = userId.toString();
   console.log(userId);
@@ -48,10 +54,10 @@ function Pform() {
   }
   return (
     <div>
-      <div className="formInputs">
+      <div className="PformInputs">
         <div className="fit49"></div>
-        <div className="fiboxP"></div>
-        <div className="fibox">
+        <div className="fiboxPimg"><img className="qrImage" src={rcApp?qrcwithRC:qrcwithoutRC} alt={"Payment Qr Code"}></img></div>
+        <div className="Pfibox">
           <label className="filabel" htmlFor="vpa">
             <center>
               Scan QR code to pay with zero transaction fees
@@ -61,13 +67,13 @@ function Pform() {
           </label>
           <button className="fiinput MPOs" onClick={paymentsPage} >More Payment options</button>
         </div>
-        <div className="fibox">
+        <div className="Pfibox">
           <label className="filabel" htmlFor="vpa">
             VPA <span className="fmandatory">*</span>
           </label>
           <input
             required="true"
-            className="fiinput"
+            className="Pfiinput"
             id="vpa"
             type="text"
             value={vpa}
@@ -77,7 +83,7 @@ function Pform() {
           <span className="ferr">{verr}</span>
         </div>
         {/* Bottom Blue Submit Button */}
-        <button className="BBSB" onClick={collectData}>
+        <button className="PBBSB" onClick={collectData}>
           <div className="bbsbtext">
             <div className="bbsbta"></div>
             <div className="bbsbttP">Done</div>

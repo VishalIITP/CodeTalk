@@ -62,25 +62,6 @@ bootcampdisc
     height:49px;
 
 }
-.fiboxP{
-    background-image: url('./Assests/Images/qr.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 500px;
-    border-radius: 10px;
-    border: 5px solid white;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 16.5px;
-
-}
-
-
-
-.payNow{
-    text-decoration: none;
-}
 
 
 
