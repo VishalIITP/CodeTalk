@@ -65,6 +65,7 @@ function Register() {
               </div>
             </div>
           </div>
+          <p className="refDetails">Get a cashback of Rs.30<br /> for every successful referral.</p>
         </div>
       </div>
     </>

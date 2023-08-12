@@ -15,7 +15,7 @@ const PaymentSuccess = () => {
                         <p>We received your purchase request;<br /> we'll be in touch shortly! after verification.</p>
                         <br />
                         <p>You will also recieve a Referral Code shortly!</p>
-                        <p className="referalC">Get a cashback of Rs.50<br /> for every successful referral.</p>
+                        <p className="referalC">Get a cashback of Rs.30<br /> for every successful referral.</p>
                     </div>
                 </div>
             </div>

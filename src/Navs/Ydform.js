@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './../App.css';
 import './../components/css/Ydform.css'
 
-const API_PATH=process.env.REACT_APP_API_PATH;
+const API_PATH = process.env.REACT_APP_API_PATH;
 
 
 
@@ -11,12 +11,14 @@ function Ydform() {
   const navigate = useNavigate();
 
   // State variables for form fields
-  const [fname, setFname] = React.useState(localStorage.getItem('fname') || '');
-  const [lname, setLname] = React.useState(localStorage.getItem('lname') || '');
-  const [cname, setCname] = React.useState(localStorage.getItem('cname') || '');
-  const [emailAdd, setEmailAdd] = React.useState(localStorage.getItem('emailAdd') || '');
-  const [phone, setPhone] = React.useState(localStorage.getItem('phone') || '');
-  const [refrrcode, setRefrrcode] = React.useState('');
+  const [fname, setFname] = useState(localStorage.getItem('fname') || '');
+  const [lname, setLname] = useState(localStorage.getItem('lname') || '');
+  const [cname, setCname] = useState(localStorage.getItem('cname') || '');
+  const [emailAdd, setEmailAdd] = useState(localStorage.getItem('emailAdd') || '');
+  const [phone, setPhone] = useState(localStorage.getItem('phone') || '');
+  const [refrrcode, setRefrrcode] = useState('');
+  const [rcvalidated, setRcvalidated] = useState(true);
+  const [studdata, setStuddata] = useState({});
 
   const handleFNChange = (e) => {
     setFname(e.target.value);
@@ -33,17 +35,40 @@ function Ydform() {
   const handlePChange = (e) => {
     setPhone(e.target.value);
   };
-  const handleRCChange = (e) => {
-    setRefrrcode(e.target.value);
+  const handleRCChange = async (e) => {
+    setVerr('');
+    const enteredReffCode = e.target.value;
+    enteredReffCode.length === 0 ? setRcvalidated(true) : setRcvalidated(false);
+    setRefrrcode(enteredReffCode);
+    console.log(enteredReffCode);
+    if (enteredReffCode.length === 7) {
+      try {
+        let response = await fetch(`${API_PATH}/${enteredReffCode}`)
+        if (response.ok) {
+          console.log("Response was Ok");
+          console.log("Validated Referral Code: ", enteredReffCode)
+          setRcvalidated(true);
+          const data = await response.json();
+          setStuddata(data);
+        } else {
+          console.log("Response was not Ok");
+          setRcvalidated(false);
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    } else if (enteredReffCode.length >= 0 && enteredReffCode.length !== 7) {
+      setRcvalidated(false);
+    }
   };
 
   let userId = phone.slice(6, 7) + fname.slice(-2) + phone.slice(8, 9) + cname.slice(-1);   //7th of phone+ last 2 of fname+ 9th of phone+ last of college
   let uRC = "CT" + phone.slice(6, 7) + fname.slice(-2) + phone.slice(8, 9) + cname.slice(-1);   //7th of phone+ last 2 of fname+ 9th of phone+ last of college
 
-  const [verr, setVerr] = React.useState('');
+  const [verr, setVerr] = useState('');
 
   const showError = () => {
-    setVerr('Please fill the required fields');
+    setVerr('Please fill the *required fields');
   };
 
   async function collectData(e) {
@@ -70,7 +95,8 @@ function Ydform() {
           College: cname,
           Email: emailAdd,
           Phone: phone,
-          RefrrelCodeApplied: refrrcode,
+          RefrrelCodeApplied: rcvalidated && refrrcode.length > 0 ? refrrcode : '',
+          ReferredBy: studdata ? studdata.ReferredBy : '',
           Time: Date().toLocaleString(),
           VPA: 'payment not done',
           PTime: 'payment not done',
@@ -86,8 +112,6 @@ function Ydform() {
     } catch (error) {
       console.log('Not able to fetch', error);
     }
-
-    
   }
 
   // useEffect to load form data from localStorage when the component mounts
@@ -127,6 +151,8 @@ function Ydform() {
           <label className='filabel' htmlFor='refrrcode'>Apply Referral Code</label>
           <input className='fiinput' id='refrrcode' type='text' value={refrrcode} onChange={handleRCChange}></input>
           <span className="ferr">{verr}</span>
+          <span className="succRC" style={{ display: rcvalidated && refrrcode.length > 0 ? "inline" : "none" }}>Congratulations! You are eligible for flat 5% off</span>
+          <span className="failRC" style={{ display: !rcvalidated && refrrcode.length > 0 ? "inline" : "none" }}>Invalid Referral Code</span>
         </div>
 
         {/* Bottom Blue Submit Button */}
@@ -138,6 +164,10 @@ function Ydform() {
           <div className='bbsbbt'>Yes! I want this offer!</div>
         </button>
       </div>
+
+
+
+
     </div>
   )
 }

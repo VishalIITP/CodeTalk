@@ -15,7 +15,7 @@ const Classpic = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     // Auto slide interval in milliseconds
-    const autoSlideInterval = 5000; // Change this to your desired interval
+    const autoSlideInterval = 3500; // Change this to your desired interval
 
     useEffect(() => {
         const intervalId = setInterval(goToNextSlide, autoSlideInterval);
