@@ -1,9 +1,15 @@
 import React from "react";
 import Ydform from "./Ydform";
+import { useEffect } from "react";
 
 import './../components/css/Register.css'
 
 function Register() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
   return (
     <>
       <div className="completeBodyCheckout">

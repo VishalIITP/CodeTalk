@@ -6,7 +6,7 @@ function CoursePlan() {
         <div>
             <div className="coursePlan">
                 <span className="wwylwhite">Here's how it works over the  </span>
-                <span className="wwylgreen">4 weeks.</span>
+                <span className="wwylgreen">2 weeks.</span>
                 <div className="CoursePlanContainer">
                     <div className="CourseWeek">
                         <div className="courseWeekImg1"></div>

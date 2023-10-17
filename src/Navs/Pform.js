@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import "./../App.css";
@@ -14,6 +15,12 @@ import { rcApp } from "./Ydform";
 const API_PATH = process.env.REACT_APP_API_PATH;
 
 function Pform() {
+  
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
+
   const navigate = useNavigate();
   const [vpa, setVpa] = useState("");
   const [verr, setVerr] = useState("");
