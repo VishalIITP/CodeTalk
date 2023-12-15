@@ -1,0 +1,24 @@
+.navbar {
+    padding-top: 15px;
+    padding: 15px;
+    border: 0;
+    background-color: rgb(158, 250, 109);
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 1px;
+    width: 100%;
+    transition:
+      background-color 0.5s,
+      color 0.5s;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .navbar-brand {
+    font-weight: 800;
+    font-size: 30px;
+    margin-left: 80px;
+    color: rgb(84, 82, 82);
+    text-shadow: 5px;
+  }
