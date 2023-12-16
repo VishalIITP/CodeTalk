@@ -1,16 +1,13 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './../App.css'
 import './css/HeroT2.css'
 
-function HeroT2() {
+
+function HeroT2(props) {
+
   return (
     <div>
-        <div className="heroT2">
-            Master Data Structures and Algorithms while building a strong
-            network of coding enthusiasts. Experience a faster learning curve
-            with me by your side.
-          </div>
-
+        <div className="heroT2">{props.actwebContent.heroT2U}<br/>{props.actwebContent.heroT2D}</div>
     </div>
   )
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import './../App.css'
 import './css/Videobox.css'
 
-function Videobox() {
+function Videobox(props) {
   return (
     <div>
                   <div className="videobox">

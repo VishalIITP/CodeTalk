@@ -1,9 +1,11 @@
 import React from 'react'
 import './../App.css'
 import './css/Whenwhere.css'
-import { wwDate,wwTime } from '../Navs/Globalvars'
 
-function Whenwhere() {
+
+function Whenwhere(props) {
+  const wwDate=props.actwebContent.date;
+  const wwTime=props.actwebContent.time;
   return (
     <div>
         <div className="whenwhereblack"></div>

@@ -13,7 +13,6 @@
 
 .when{
     float: left;  
-    width: 123.11px;
     height: 36px;
     flex-shrink: 0;
     border-radius: 8px;
@@ -23,9 +22,8 @@
 
 .where{
     float: left;
-    margin-left: 37.89px;
+    margin-left: 20.89px;
     
-    width: 123.11px;
     height: 36px;
     flex-shrink: 0;
     border-radius: 8px;
