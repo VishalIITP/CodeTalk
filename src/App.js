@@ -1,14 +1,14 @@
 // import React, { useState } from 'react';
 
 import BodyMode from './components/BodyMode';
-import NavBar from './components/NavBar';
+import Navbar from './components/Navbar';
 const App=()=>
 {
   
  
   return(
     <>
-    <NavBar/>  
+    <Navbar/>  
     <BodyMode />
     
    

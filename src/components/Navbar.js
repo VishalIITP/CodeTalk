@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './css/NavBar.css';
 import img from './../Assests/Images/profile.png'
-import logo from './../Assests/Logo/blackTextNobg.png'
+import logo from './../Assests/Logo/whiteTextNobg.png'
 
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
