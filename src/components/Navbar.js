@@ -76,6 +76,7 @@ const Navbar = () => {
           />
         </div>
 
+
         {/* login modal content  */}
         {showLoginModal && (
           <div className="modal">
