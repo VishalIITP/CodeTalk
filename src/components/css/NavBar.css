@@ -58,6 +58,7 @@
 }
 .profile-icon {
   position: absolute;
+  cursor: pointer;
   right: 0;
   margin-right: 40px;
   /* border: 4px solid black; */
