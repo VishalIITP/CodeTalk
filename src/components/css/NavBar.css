@@ -18,8 +18,22 @@
 }
 .logo {
   max-width: 100%;
-  margin-left: 150px;
+  height: min-content;
   clip-path: inset(10% 0% 40% 10%);
+  display: block;
+  margin: auto 30px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  /* Adjust the logo size for larger screens */
+  .mbil {
+   display: none;
+  }
+  .navbar-header{
+    display: none;
+  }
 }
 
 .navbar-header {
@@ -33,20 +47,22 @@
 
 .nav-item {
   margin-right: 20px;
-  color: #042e0e;
+  color: #000000;
+
   font-size: 16px;
   font-weight: 500;
   margin-left: 15px;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   text-decoration: none;
-
 }
 .mbil {
-  color: #042e0e;
-  font-size: 20px;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
   margin-bottom: 12px;
-  border-bottom: 4px solid #042e0e;
-  font-family: "Questrial", sans-serif;
+  /* border-bottom: 4px solid #042e0e; */
+  font-family: "IBM Plex Sans", sans-serif;
+  text-decoration: none;
 }
 
 .profile-icon img {
@@ -64,32 +80,31 @@
 }
 .hamburger-menu {
   display: none;
-  cursor: pointer;
+  cursor: default;
+  text-decoration: none;
   flex-direction: column;
   padding: 5px;
   position: absolute;
-  right: 0;
-  margin-right: 120px;
-  
+  margin-left: 10px;
+  left: 0;
 }
 
 .bar {
   height: 3px;
-  width: 12px;
+  width: 20px;
   background-color: #fff;
   margin-bottom: 5px;
-  margin-right:240px;
   align-self: flex-end;
-  
 }
 
 .mobile-menu {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   display: flex;
   flex-direction: column;
   position: absolute;
   top: 40px;
-  background-color: #91bb7ae7;
+  background-color: #99b888;
+
   padding: 10px;
 }
 
