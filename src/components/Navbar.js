@@ -53,12 +53,7 @@ const Navbar = () => {
           <img className="profileImage" src={img} alt="profile" />
         </div>
 
-        {/* Hamburger menu for smaller screens */}
-        <div className='hamburger-menu' onClick={toggleMenu}>
-          <div className='bar'></div>
-          <div className='bar'></div>
-          <div className='bar'></div>
-        </div>
+        
 
         {/* Mobile menu for smaller screens */}
         {isMenuOpen && (
@@ -69,6 +64,12 @@ const Navbar = () => {
             
           </div>
         )}
+        {/* Hamburger menu for smaller screens */}
+        <div className='hamburger-menu' onClick={toggleMenu}>
+          <div className='bar' ></div>
+          <div className='bar'></div>
+          <div className='bar'></div>
+        </div>
       </div>
     </nav>
   );

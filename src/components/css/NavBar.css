@@ -19,7 +19,7 @@
 .logo {
   max-width: 100%;
   margin-left: 150px;
-  clip-path: inset(40% 0% 40% 10%);
+  clip-path: inset(10% 0% 40% 10%);
 }
 
 .navbar-header {
@@ -70,21 +70,26 @@
   position: absolute;
   right: 0;
   margin-right: 120px;
+  
 }
 
 .bar {
   height: 3px;
-  width: 14px;
+  width: 12px;
   background-color: #fff;
-  margin: 4px 0;
+  margin-bottom: 5px;
+  margin-right:240px;
+  align-self: flex-end;
+  
 }
 
 .mobile-menu {
+  font-family: 'IBM Plex Sans', sans-serif;
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 60px;
-  background-color: rgb(158, 250, 109);
+  top: 40px;
+  background-color: #91bb7ae7;
   padding: 10px;
 }
 
