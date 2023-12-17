@@ -15,7 +15,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleResize = () => {
       // Adjust the logo size based on your desired conditions
-      const newLogoSize = window.innerWidth < 500?180:230;
+      const newLogoSize = window.innerWidth < 500 ? 180 : 230;
       setLogoSize(newLogoSize);
     };
 
@@ -53,22 +53,23 @@ const Navbar = () => {
           <img className="profileImage" src={img} alt="profile" />
         </div>
 
-        {/* Hamburger menu for smaller screens */}
-        <div className='hamburger-menu' onClick={toggleMenu}>
-          <div className='bar'></div>
-          <div className='bar'></div>
-          <div className='bar'></div>
-        </div>
+
 
         {/* Mobile menu for smaller screens */}
         {isMenuOpen && (
           <div className='mobile-menu'>
-            <a href='#' className= "mbil">Dashboard</a>
-            <a href='#' className= "mbil">Time table</a>
-            <a href='#' className= "mbil">Leaderboard</a>
-            
+            <a href='#' className="mbil">Dashboard</a>
+            <a href='#' className="mbil">Time table</a>
+            <a href='#' className="mbil">Leaderboard</a>
+
           </div>
         )}
+        {/* Hamburger menu for smaller screens */}
+        <div className='hamburger-menu' onClick={toggleMenu}>
+          <div className='bar' ></div>
+          <div className='bar'></div>
+          <div className='bar'></div>
+        </div>
       </div>
     </nav>
   );
