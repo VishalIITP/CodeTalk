@@ -19,6 +19,7 @@ import Lpu from "../components/Lpu";
 import CoursePlan from "../components/Courseplan";
 import FeedSuggest from "../components/FeedSuggest";
 import Classpic from "../components/Classpic";
+import Footer from "../components/Footer";
 // import {useLayoutEffect, useRef, useState} from 'react';
 // import calendar from './../../Assests/symbols/calendar.png'
 // import clock from './../../Assests/symbols/clock.png'
