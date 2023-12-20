@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./css/NavBar.css";
 import img from "./../Assests/Images/profile.png";
 import logo from "./../Assests/Logo/whiteTextNobg.png";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -45,24 +47,30 @@ const Navbar = () => {
       <div className="navbar-header">
         <div className="left-menu">
           <a href="#" className="nav-item">
-            Dashboard
+            <button>Dashboard</button>
           </a>
-          <a href="#" className="nav-item">
-            Time table
-          </a>
-          <a href="#" className="nav-item">
-            Leaderboard
+
+          <NavLink to="/Courseplan" className="nav-item">
+            <button>Time table</button>
+          </NavLink>
+
+          <a href="" className="nav-item">
+
+          <button>Leaderboard</button>
           </a>
         </div>
 
         <div className="navbar-brand">
           {/* Your profile icon or image */}
-          <img
-            className="logo"
-            src={logo}
-            alt="logo"
-            style={{ width: `${logoSize}px` }}
-          />
+
+          <NavLink to="/" className="nav-item">
+            <img
+              className="logo"
+              src={logo}
+              alt="logo"
+              style={{ width: `300px` }}
+            />
+          </NavLink>
         </div>
 
         <div className="profile-icon">
@@ -75,7 +83,6 @@ const Navbar = () => {
             onClick={() => openLoginModal()}
           />
         </div>
-
 
         {/* login modal content  */}
         {showLoginModal && (
