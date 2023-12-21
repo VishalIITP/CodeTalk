@@ -2,9 +2,9 @@
 .coursePlan{
     /* margin-top: 86px; */
     /* max-width: 900px; */
-    height:100vh;
-    /* margin-left: auto;
-    margin-right: auto; */
+     height:100%;
+    margin-left: auto;
+    margin-right: auto;
     background-color: black;
 }
 
