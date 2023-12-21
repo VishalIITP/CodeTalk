@@ -1,6 +1,7 @@
 // import React, { useState } from 'react';
 
 import BodyMode from './components/BodyMode';
+import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 const App=()=>
 {
@@ -10,7 +11,7 @@ const App=()=>
     <>
     <Navbar/>  
     <BodyMode />
-    
+    <Footer/>
    
     
     </>
