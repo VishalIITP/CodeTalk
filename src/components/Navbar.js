@@ -46,18 +46,21 @@ const Navbar = () => {
     <nav className={`navbar ${isMenuOpen ? "menu-open" : ""}`}>
       <div className="navbar-header">
         <div className="left-menu">
-          <a href="#" className="nav-item">
-            <button>Dashboard</button>
-          </a>
+         
+
+          <NavLink to="/" className="nav-item">
+            <button>DashBoard</button>
+          </NavLink>
 
           <NavLink to="/Courseplan" className="nav-item">
             <button>Time table</button>
           </NavLink>
 
-          <a href="" className="nav-item">
+          <NavLink to="/" className="nav-item">
+            <button>LeaderBoard</button>
+          </NavLink>
 
-          <button>Leaderboard</button>
-          </a>
+         
         </div>
 
         <div className="navbar-brand">
