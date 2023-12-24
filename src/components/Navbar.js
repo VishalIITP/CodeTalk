@@ -59,6 +59,9 @@ const Navbar = () => {
           <NavLink to="/" className="nav-item">
             <button>LeaderBoard</button>
           </NavLink>
+          <NavLink to="/About" className="nav-item">
+            <button>About</button>
+          </NavLink>
 
          
         </div>

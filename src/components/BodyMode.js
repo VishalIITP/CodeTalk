@@ -9,6 +9,8 @@ import Register from "../Navs/Register";
 import Pform from "../Navs/Pform";
 import PaymentSuccess from "./PaymentSuccess";
 import CoursePlan from "./Courseplan";
+import About from "./About";
+
 // import cross from "./../../src/Assests/symbols/cross-image.png"
 
 const BodyMode = (props) => {
@@ -18,6 +20,7 @@ const BodyMode = (props) => {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/Courseplan" element={<CoursePlan />} />
+        <Route path="/About" element={<About/>} />
         <Route path="/register" element={<Register />} />
         <Route path="/register/checkout/:userId" element={<Pform />} />
         <Route path="/register/checkout/payment_success" element={<PaymentSuccess />} />
