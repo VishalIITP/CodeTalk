@@ -1,0 +1,54 @@
+
+.main{
+    padding-top: 40px;
+    height: 60vw;
+    /* background-color: black; */
+    background-image: url("../../Assests/Images/about-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.heading{
+    text-align: center;
+    padding: 30px;
+}
+
+.content{
+    padding: 20px 20vw;
+}
+
+@media screen and (max-width: 925px) {
+    .main{
+        height: 100vw;
+    }
+  }
+
+@media screen and (max-width: 700px) {
+    .main{
+        height: 120vw;
+    }
+    
+    .content p{
+        font-size: 15px;
+    }
+  }
+
+  @media screen and (max-width: 490px) {
+    .main{
+        height: 140vw;
+    }
+    
+    .content p{
+        font-size: 12px;
+    }
+  }
+
+  @media screen and (max-width: 370px) {
+    .main{
+        height: 200vw;
+    }
+    
+    .content p{
+        font-size: 12px;
+    }
+  }

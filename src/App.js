@@ -2,7 +2,7 @@
 
 import BodyMode from './components/BodyMode';
 import Footer from './components/Footer';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar/Navbar';
 const App=()=>
 {
   

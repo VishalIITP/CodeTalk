@@ -1,52 +1,36 @@
-@import url("https://fonts.googleapis.com/css2?family=Electrolize&family=News+Cycle&family=Questrial&display=swap");
 .navbar {
-  background-color: rgba(46, 110, 11, 0.486);
-  height: 60px;
+  text-decoration: none;
+  background-image: none;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  height: 40px;
   font-size: 12px;
   display: flex;
   justify-content:space-between;
   align-items: center;
-  letter-spacing: 1px;
-  transition: background-color 0.5s, color 0.5s;
-  font-family: 'Arial', sans-serif;
-  
+  font-family: IBM Plex Sans;
 }
-
 .navbar-brand{
-  margin-left: 200px;
-
-
+  margin-left: -50px;
 }
-
-.navbar-brand img{
-
-  
-}
-
-
-
 .navbar button {
   appearance: none;
   background-color: transparent;
-  /* border: 0.125em solid #1A1A1A; */
   border: none;
-  border-radius: 0.9375em;
   box-sizing: border-box;
-  color: #3B3B3B;
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: IBM Plex Sans;
   font-size: 16px;
   font-weight: 600;
-  line-height: normal;
   margin: 0;
-  min-height: 3.75em;
-  min-width: 0;
   outline: none;
-  padding: 4px 4px;
   text-align: center;
   text-decoration: none;
-  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  /* transition: all 300ms cubic-bezier(.23, 1, 0.32, 1); */
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -57,23 +41,12 @@
   pointer-events: none;
  }
  
- .navbar button:hover {
-  color: #fff;
-  background-color: #1A1A1A;
-  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-  transform: translateY(-2px);
- }
- 
- .navbar button:active {
-  box-shadow: none;
-  transform: translateY(0);
- }
 .navbar-brand {
   justify-content: center;
   align-content: center;
 }
 .logo {
-  max-width: 100%;
+  width: 100%;
   height: min-content;
   clip-path: inset(10% 0% 40% 10%);
   display: block;
@@ -107,21 +80,21 @@
 }
 
 .nav-item {
-  margin-right: 20px;
+  margin-right: 5px;
   color: #000000;
-
   font-size: 16px;
   font-weight: 500;
-  margin-left: 15px;
+  margin-left: 10px;
   font-family: "IBM Plex Sans", sans-serif;
   text-decoration: none;
 }
+
+
 .mbil {
   color: #000000;
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 12px;
-  /* border-bottom: 4px solid #042e0e; */
   font-family: "IBM Plex Sans", sans-serif;
   text-decoration: none;
 }
@@ -133,11 +106,11 @@
   /* border-radius: 50%; */
 }
 .profile-icon {
+  background-color: white;
   position: absolute;
   cursor: pointer;
   right: 0;
   margin-right: 40px;
-  /* border: 4px solid black; */
   border-radius: 100%;
 }
 .hamburger-menu {
