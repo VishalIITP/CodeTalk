@@ -8,8 +8,10 @@ import Register from "../Navs/Register";
 // import RegisterP from './Navs/RegisterP'
 import Pform from "../Navs/Pform";
 import PaymentSuccess from "./PaymentSuccess";
-import CoursePlan from "./Courseplan";
-import About from "./About";
+import About from "./About/About";
+import DashBoard from "./Dashboard/Dashboard";
+import TimeTable from "./TimeTable/TimeTable";
+import LeaderBoard from "./Leaderboard/Leaderboard";
 
 // import cross from "./../../src/Assests/symbols/cross-image.png"
 
@@ -19,7 +21,9 @@ const BodyMode = (props) => {
     
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/Courseplan" element={<CoursePlan />} />
+        <Route path="/timetable" element={<TimeTable />} />
+        <Route path="/Dashboard" element={<DashBoard />} />
+        <Route path="/Leaderboard" element={<LeaderBoard />} />
         <Route path="/About" element={<About/>} />
         <Route path="/register" element={<Register />} />
         <Route path="/register/checkout/:userId" element={<Pform />} />

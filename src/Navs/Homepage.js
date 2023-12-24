@@ -16,7 +16,7 @@ import Ebo from "../components/Ebo";
 import EnrollNow from "../components/EnrollNow";
 import Certification from "../components/Certification";
 import Lpu from "../components/Lpu";
-import CoursePlan from "../components/Courseplan";
+// import CoursePlan from "../components/TimeTable/Courseplan";
 import FeedSuggest from "../components/FeedSuggest";
 import Classpic from "../components/Classpic";
 import Footer from "../components/Footer";
@@ -65,7 +65,7 @@ useEffect(()=>{
           <Btyb actwebContent={actwebContent}/>
           <Hitw actwebContent={actwebContent}/>
           <div className="height20"></div>
-          <CoursePlan actwebContent={actwebContent}/>
+          {/* <CoursePlan actwebContent={actwebContent}/> */}
           <div className="height20"></div>
           <RnB actwebContent={actwebContent}/>
           <Wwyl actwebContent={actwebContent}/>
