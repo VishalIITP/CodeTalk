@@ -1,14 +1,17 @@
 import React from "react";
-import dashStyles from "../Dashboard/Dashboard.module.css";
-
+import "./Dashboard.module.css"
+import Content from "./layout/Content/Content"
 const DashBoard = () => {
 
 
     return (
-        <div className={dashStyles.bg}>
-            <div className={dashStyles.top}></div>
-            This page is reserved for DashBoard and is in the process of making.
-        </div>
+      <>
+
+      <Content/>
+
+      
+      
+      </>
     )
 
 }
