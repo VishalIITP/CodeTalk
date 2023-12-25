@@ -2,7 +2,8 @@
     background-color: black;
     flex: 1;
     padding: 32px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
+    color: white;
   }
 
   @media screen and (max-width: 1400px) {
