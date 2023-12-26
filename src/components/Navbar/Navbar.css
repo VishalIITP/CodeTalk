@@ -1,11 +1,11 @@
 .navbar {
   text-decoration: none;
-  background-image: none;
-  position: fixed;
+  background-color: #99b888;
+  /* position: fixed; */
   width: 100%;
   z-index: 1;
   top: 0;
-  height: 40px;
+  height: 60px;
   font-size: 12px;
   display: flex;
   justify-content:space-between;
