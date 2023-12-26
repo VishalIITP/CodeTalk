@@ -47,7 +47,7 @@ const Navbar = () => {
       <div className="navbar-header">
         <div className="left-menu">
 
-        <NavLink to="/" className="nav-item">
+          <NavLink to="/" className="nav-item">
             <button>Home</button>
           </NavLink>
           <NavLink to="/Dashboard" className="nav-item">
@@ -161,15 +161,27 @@ const Navbar = () => {
         {/* Mobile menu for smaller screens */}
         {isMenuOpen && (
           <div className="mobile-menu">
-            <a href="#" className="mbil">
-              Dashboard
-            </a>
-            <a href="#" className="mbil">
-              Time table
-            </a>
-            <a href="#" className="mbil">
-              Leaderboard
-            </a>
+            
+
+            <NavLink to="/" className="mbil">
+            <button>Home</button>
+          </NavLink>
+          <NavLink to="/Dashboard" className="mbil">
+            <button>Dashboard</button>
+          </NavLink>
+
+          <NavLink to="/timetable" className="mbil">
+            <button>Time table</button>
+          </NavLink>
+
+          <NavLink to="/Leaderboard" className="mbil">
+            <button>Leaderboard</button>
+          </NavLink>
+          <NavLink to="/About" className="mbil">
+            <button>About</button>
+          </NavLink>
+
+
           </div>
         )}
       </div>

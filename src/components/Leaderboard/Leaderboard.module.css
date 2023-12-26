@@ -78,6 +78,7 @@ Code written by:
     width: 95%;
     max-height: calc(89% - 1.6rem);
     background-color: #fffb;
+    position: relative;
 
     margin: .8rem auto;
     border-radius: .6rem;
