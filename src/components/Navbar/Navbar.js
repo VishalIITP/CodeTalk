@@ -98,22 +98,47 @@ const Navbar = () => {
             <span className="close c1" onClick={() => setShowLoginModal(false)}>
               &times;
             </span>
-            <div className="modal-content">
-              <h2>Login</h2>
-              <div>
-                <input type="text" placeholder="Username" />
-              </div>
-              <div>
-                <input type="password" placeholder="Password" />
-              </div>
-              <button className="btn">Login</button>
-              <p>
-                Don't have an account?{" "}
-                <span onClick={() => openSignupModal()}>
-                  Click here to sign up
-                </span>
-              </p>
-            </div>
+          
+
+            <div class="formbox modal-content">
+      <h2>LOGIN</h2>
+        <div class="inputbox">
+          <span class="icon">
+
+          </span>
+          <input type="email" id="email" required />
+          <label>Email</label>
+        </div>
+
+        <div class="inputbox">
+          <span class="icon">
+
+          </span>
+          <input type="password" required />
+          <label>Password</label>
+        </div>
+
+        <div class="remember">
+          <label>
+            <input type="checkbox" />
+            Remember me
+          </label>
+          <a href="#">Forgot Password?</a>
+        </div>
+
+        <div class="buttum">
+          <button type="submit" class="btn">LOGIN</button>
+
+        </div>
+        <div class="register">
+
+          <p>Don't have a account ?
+            <span class="register1" onClick={() => openSignupModal()}>REGISTER</span></p>
+         
+        </div>
+
+      
+    </div>
           </div>
         )}
 
@@ -126,28 +151,52 @@ const Navbar = () => {
             >
               &times;
             </span>
-            <div className="modal-content">
-              <h2>Sign Up</h2>
+          
 
-              <div>
-                <input type="text" placeholder="Username" />
-              </div>
-              <div>
-                <input type="password" placeholder="Password" />
-              </div>
-              <div>
-                <input type="password" placeholder="Confirm Password" />
-              </div>
+            <div class="formbox modal-content">
+      <h2>SIGNUP</h2>
+        <div class="inputbox">
+          <span class="icon">
 
-              <button className="btn">Sign Up</button>
+          </span>
+          <input type="email" id="email" required />
+          <label>Email</label>
+        </div>
 
-              <p>
-                Already have an account?{" "}
-                <span onClick={() => openLoginModal()}>
-                  Click here to log in
-                </span>
-              </p>
-            </div>
+        <div class="inputbox">
+          <span class="icon">
+
+          </span>
+          <input type="password" required />
+          <label>Password</label>
+        </div>
+
+        <div class="inputbox">
+          <span class="icon">
+
+          </span>
+          <input type="password" required />
+          <label>Phone Number</label>
+        </div>
+
+       
+
+        <div class="buttum">
+          <button type="submit" class="btn">SIGNUP</button>
+
+        </div>
+        <div class="register">
+
+          <p>ALREADY HAVE AN ACCOUNT ?
+            <span class="register1"onClick={() => openLoginModal()}>LOGIN</span></p>
+         
+        </div>
+
+      
+    </div>
+
+            
+            
           </div>
         )}
 
