@@ -25,13 +25,12 @@ import Footer from "../components/Footer";
 // import clock from './../../Assests/symbols/clock.png'
 const API_PATH = process.env.REACT_APP_API_PATH;
 
-
 const Homepage = () => {
   const [actwebContent, setActwebContent] = useState([]);
-  const [actwebFetched,setActwebFetched]=useState(false);
+  const [actwebFetched, setActwebFetched] = useState(false);
   const fetchactiveWeb = async () => {
     try {
-      let response = await fetch(`${API_PATH}/active-website/`)
+      let response = await fetch(`${API_PATH}/active-website/`);
       if (response.ok) {
         const data = await response.json();
         setActwebContent(data);
@@ -43,56 +42,55 @@ const Homepage = () => {
     }
   };
 
-useEffect(()=>{
-  if(!actwebFetched){
-    fetchactiveWeb();
-    sessionStorage.setItem('actwebFetched','true');
-  }
-},[actwebFetched]);
-  
- 
+  useEffect(() => {
+    if (!actwebFetched) {
+      fetchactiveWeb();
+      sessionStorage.setItem("actwebFetched", "true");
+    }
+  }, [actwebFetched]);
+
   return (
     <div>
       <div className="completeBodyHome">
         <div className="bodycontentHome">
           <div className="topblack"></div>
-          <HeroT1 actwebContent={actwebContent}/>
-          <HeroT2 actwebContent={actwebContent}/>
-          <Whenwhere actwebContent={actwebContent}/>
-          <Videobox actwebContent={actwebContent}/>
+          <HeroT1 actwebContent={actwebContent} />
+          <HeroT2 actwebContent={actwebContent} />
+          <Whenwhere actwebContent={actwebContent} />
+          <Videobox actwebContent={actwebContent} />
           <div className="height20"></div>
-          <RnB actwebContent={actwebContent}/> {/* RnB:Register Now button to be used everywhere */}
-          <Btyb actwebContent={actwebContent}/>
-          <Hitw actwebContent={actwebContent}/>
+          <RnB actwebContent={actwebContent} />{" "}
+          {/* RnB:Register Now button to be used everywhere */}
+          <Btyb actwebContent={actwebContent} />
+          <Hitw actwebContent={actwebContent} />
           <div className="height20"></div>
           {/* <CoursePlan actwebContent={actwebContent}/> */}
           <div className="height20"></div>
-          <RnB actwebContent={actwebContent}/>
-          <Wwyl actwebContent={actwebContent}/>
+          <RnB actwebContent={actwebContent} />
+          <Wwyl actwebContent={actwebContent} />
           <div className="height20"></div>
-          <RnB actwebContent={actwebContent}/>
-          <Lpu actwebContent={actwebContent}/>
-          <EnrollNow actwebContent={actwebContent}/>
+          <RnB actwebContent={actwebContent} />
+          <Lpu actwebContent={actwebContent} />
+          <EnrollNow actwebContent={actwebContent} />
           <div className="height20"></div>
-
-          <RnB actwebContent={actwebContent}/>
-          <div className="height20"></div>
-          <div className="height20"></div>
-          <div className="height20"></div>
-          <div className="height20"></div>
-          <Certification actwebContent={actwebContent}/>
+          <RnB actwebContent={actwebContent} />
           <div className="height20"></div>
           <div className="height20"></div>
           <div className="height20"></div>
           <div className="height20"></div>
-
-          <RnB actwebContent={actwebContent}/>
+          <Certification actwebContent={actwebContent} />
           <div className="height20"></div>
-          <Classpic actwebContent={actwebContent}/>
-          <Accordian actwebContent={actwebContent}/>
-          <FeedSuggest actwebContent={actwebContent}/>
-          <RnBB actwebContent={actwebContent}/>{/* RnBB: Register Now Button Bottom Sticky */}
-          <Ebo actwebContent={actwebContent}/>
+          <div className="height20"></div>
+          <div className="height20"></div>
+          <div className="height20"></div>
+          <RnB actwebContent={actwebContent} />
+          <div className="height20"></div>
+          <Classpic actwebContent={actwebContent} />
+          <Accordian actwebContent={actwebContent} />
+          <FeedSuggest actwebContent={actwebContent} />
+          <RnBB actwebContent={actwebContent} />
+          {/* RnBB: 1Register Now Button Bottom Sticky */}
+          <Ebo actwebContent={actwebContent} />
         </div>
       </div>
     </div>
