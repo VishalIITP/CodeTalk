@@ -8,7 +8,7 @@ const Budget = () => {
         <div className="grid-c-title">
             <h3 className="grid-c-title-text">RECENT AC</h3>
             <button className="grid-c-title-icon">
-                <img src={ iconsImgs.plus } />
+            <img src={iconsImgs.plus} alt="Plus Icon" />
             </button>
         </div>
         <div className="grid-c-top text-silver-v1">
@@ -22,7 +22,7 @@ const Budget = () => {
                         <div className="grid-item" key = { budget.id }>
                             <div className="grid-item-l">
                                 <div className="icon">
-                                    <img src={ iconsImgs.check } />
+                                    <img src={ iconsImgs.check } alt="Check Icon" />
                                 </div>
                                 <p className="text text-silver-v1">DUPLICATE ARRAY <span>MEDIUM</span></p>
                             </div>

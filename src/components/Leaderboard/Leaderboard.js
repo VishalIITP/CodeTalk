@@ -1,28 +1,28 @@
 import React from "react";
 // import lbStyles from "../Leaderboard/Leaderboard.module.css"
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
-import Paper from '@mui/material/Paper';
+// import Table from '@mui/material/Table';
+// import TableBody from '@mui/material/TableBody';
+// import TableCell from '@mui/material/TableCell';
+// import TableContainer from '@mui/material/TableContainer';
+// import TableHead from '@mui/material/TableHead';
+// import TableRow from '@mui/material/TableRow';
+// import Paper from '@mui/material/Paper';
 import "./Leaderboard.module.css"
-import { green } from "@mui/material/colors";
+// import { green } from "@mui/material/colors";
 const LeaderBoard = () => {
 
-    function createData(name, calories, fat, carbs, protein) {
-        return { name, calories, fat, carbs, protein };
-    }
+    // function createData(name, calories, fat, carbs, protein) {
+    //     return { name, calories, fat, carbs, protein };
+    // }
 
 
-    const rows = [
-        createData('VISHAL IITP', 159, 6.0, 24, 4.0),
-        createData('DIXIT', 237, 9.0, 37, 4.3),
-        createData('SHARMA', 262, 16.0, 24, 6.0),
-        createData('RAGHAV', 305, 3.7, 67, 4.3),
-        createData('HIMANSHU', 356, 16.0, 49, 3.9),
-    ];
+    // const rows = [
+    //     createData('VISHAL IITP', 159, 6.0, 24, 4.0),
+    //     createData('DIXIT', 237, 9.0, 37, 4.3),
+    //     createData('SHARMA', 262, 16.0, 24, 6.0),
+    //     createData('RAGHAV', 305, 3.7, 67, 4.3),
+    //     createData('HIMANSHU', 356, 16.0, 49, 3.9),
+    // ];
 
 
     return (

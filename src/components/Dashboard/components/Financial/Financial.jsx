@@ -6,7 +6,7 @@ const Financial = () => {
         <div className="grid-c-title">
             <h3 className="grid-c-title-text">Codetalk guide</h3>
             <button className="grid-c-title-icon">
-                <img src={ iconsImgs.plus } />
+                <img src={ iconsImgs.plus } alt="Check Icon"/>
             </button>
         </div>
         <div className="grid-c8-content">

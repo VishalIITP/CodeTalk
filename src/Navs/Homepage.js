@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 // import ReactPlayer from "react-player"
 // import { Link } from "react-router-dom";
 // import RegisterNowBut from "./RegisterNowBut";
@@ -19,7 +19,7 @@ import Lpu from "../components/Lpu";
 // import CoursePlan from "../components/TimeTable/Courseplan";
 import FeedSuggest from "../components/FeedSuggest";
 import Classpic from "../components/Classpic";
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
 // import {useLayoutEffect, useRef, useState} from 'react';
 // import calendar from './../../Assests/symbols/calendar.png'
 // import clock from './../../Assests/symbols/clock.png'
@@ -28,6 +28,7 @@ const API_PATH = process.env.REACT_APP_API_PATH;
 
 const Homepage = () => {
   const [actwebContent, setActwebContent] = useState([]);
+  // eslint-disable-next-line
   const [actwebFetched,setActwebFetched]=useState(false);
   const fetchactiveWeb = async () => {
     try {

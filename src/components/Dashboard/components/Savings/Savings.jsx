@@ -8,7 +8,7 @@ const Savings = () => {
         <div className="grid-c-title">
             <h3 className="grid-c-title-text">ASSIGNMENT</h3>
             <button className="grid-c-title-icon">
-                <img src={ iconsImgs.plus } />
+                <img src={ iconsImgs.plus } alt="Check Icon"/>
             </button>
         </div>
         <div className="grid-c6-content">
@@ -19,7 +19,7 @@ const Savings = () => {
                             <div className="grid-item-top">
                                 <div className="grid-item-top-l">
                                     <div className="avatar img-fit-cover">
-                                        <img src={ personsImgs.person_one } />
+                                        <img src={ personsImgs.person_one } alt="person Icon"/>
                                     </div>
                                     <p className="text text-silver-v1">STRIVER SDE SHEET</p>
                                 </div>

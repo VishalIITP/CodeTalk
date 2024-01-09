@@ -2,11 +2,12 @@ import React, { useState, useEffect } from "react";
 import "../Navbar/Navbar.css"
 import img from "./../../Assests/Images/profile.png";
 import logo from "./../../Assests/Logo/whiteTextNobg.png";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+// import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
+  // eslint-disable-next-line
   const [logoSize, setLogoSize] = useState(200); // Set your initial logo size here
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [showSignupModal, setShowSignupModal] = useState(false);

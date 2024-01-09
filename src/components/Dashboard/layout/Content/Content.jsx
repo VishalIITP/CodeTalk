@@ -1,5 +1,5 @@
 import "./Content.css";
-import ContentTop from '../../components/ContentTop/ContentTop';
+// import ContentTop from '../../components/ContentTop/ContentTop';
 import ContentMain from '../../components/ContentMain/ContentMain';
 
 const Content = () => {

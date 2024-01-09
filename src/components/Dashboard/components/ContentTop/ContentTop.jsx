@@ -18,7 +18,7 @@ const ContentTop = () => {
                 <img src={ iconsImgs.search } alt="" />
             </button>
             <button className="notification-btn content-top-btn">
-                <img src={ iconsImgs.bell } />
+                <img src={ iconsImgs.bell } alt="Check Icon" />
                 <span className="notification-btn-dot"></span>
             </button>
         </div>

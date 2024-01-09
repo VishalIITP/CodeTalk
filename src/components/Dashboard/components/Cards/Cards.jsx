@@ -7,7 +7,7 @@ const Cards = () => {
         <div className="grid-c-title">
             <h3 className="grid-c-title-text">Cards</h3>
             <button className="grid-c-title-icon">
-                <img src={ iconsImgs.plus } />
+                <img src={ iconsImgs.plus } alt="plus Icon"/>
             </button>
         </div>
         <div className="grid-c1-content">

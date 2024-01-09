@@ -8,7 +8,7 @@ const Subscriptions = () => {
         <div className="grid-c-title">
             <h3 className="grid-c-title-text">TOPICS COVERED</h3>
             <button className="grid-c-title-icon">
-                <img src={ iconsImgs.plus } />
+                <img src={ iconsImgs.plus } alt="Check Icon" />
             </button>
         </div>
         <div className="grid-c5-content">
@@ -18,7 +18,7 @@ const Subscriptions = () => {
                         <div className="grid-item" key = {subscription.id}>
                             <div className="grid-item-l">
                                 <div className="icon">
-                                    <img src={ iconsImgs.alert } />
+                                    <img src={ iconsImgs.alert } alt="Check Icon" />
                                 </div>
                                 <p className="text text-silver-v1">ARRAY,HASHMAPS<span>56/200 QUES.</span></p>
                             </div>
