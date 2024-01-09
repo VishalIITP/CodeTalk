@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import './../App.css'
 import './css/HeroT1.css'
 
-const API_PATH = process.env.REACT_APP_API_PATH;
+// const API_PATH = process.env.REACT_APP_API_PATH;
 
 
 
