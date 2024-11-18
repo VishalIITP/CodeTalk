@@ -1,7 +1,8 @@
 import React from "react";
 import './css/FeedSuggest.css'
 
-const API_PATH = process.env.REACT_APP_API_PATH
+const API_PATH =process.env.REACT_APP_API_PATH;
+
 
 const FeedSuggest = () => {
 
